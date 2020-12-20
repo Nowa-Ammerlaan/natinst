@@ -42,7 +42,7 @@ QA_PREBUILT="*"
 # and it will likely not work, as the pkg_pre/post/inst/rm
 # phases will fail to extract the script from the rpm file
 # as it is not guaranteed to exist when using binpkgs
-RESTRICT-"bindist"
+RESTRICT="bindist"
 
 # @FUNCTION: rpm-extended_src_compile
 # @DESCRIPTION:
