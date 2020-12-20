@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>andrewammerlaan@riseup.net</email>
+		<name>Andrew Ammerlaan</name>
+	</maintainer>
+	<longdescription>
+A Python package for support of the "Virtual Instrument Software
+Architecture" (VISA), in order to control measurement devices and
+test equipment via GPIB, RS232, Ethernet or USB.
+</longdescription>
+	<upstream>
+		<remote-id type="github">pyvisa/pyvisa</remote-id>
+		<remote-id type="pypi">PyVISA</remote-id>
+	</upstream>
+</pkgmetadata>
