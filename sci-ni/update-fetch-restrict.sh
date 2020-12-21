@@ -72,9 +72,10 @@ for rpm in ${list_rpms}; do
 				ebuild_deps+="${match}\n"
 			else
 				printf "   Did not find match for ${dep_name}, assuming this is a new package from this rpm repo\n"
-				# Replace dash with underscore and remove dots from the new dep name
+				# Replace dash with underscore and remove dots from the new dep name, strip everything after (
 				dep_name="${dep_name//-/_}"
 				dep_name="${dep_name//.}"
+				dep_name="${dep_name%%(*}"
 				# Add 'r' for revision dependencies
 				dep_version="${dep_version//-/-r}"
 				if [ -n "${dep_operator}" ]; then

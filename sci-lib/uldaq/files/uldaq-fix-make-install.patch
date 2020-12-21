@@ -1,0 +1,32 @@
+diff --git a/Makefile.am b/Makefile.am
+index 0e69cd4..cc3c891 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -44,10 +44,7 @@ dist-up: dist
+ 
+ if OS_LINUX
+ install-data-hook:
+-	udevadm control --reload-rules && \
+-	test -f "/etc/redhat-release" && echo "/usr/local/lib" > /etc/ld.so.conf.d/uldaq.conf || echo "" && \
+-	test -f "/etc/arch-release" && echo "/usr/local/lib" > /etc/ld.so.conf.d/uldaq.conf || echo "" && \
+-	ldconfig
++	echo ""
+ endif
+ 
+ if OS_LINUX
+diff --git a/Makefile.in b/Makefile.in
+index 9fff689..50b414e 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -947,10 +947,7 @@ dist-up: dist
+ 	cp $(distdir).tar.bz2 $(reldir)
+ 
+ @OS_LINUX_TRUE@install-data-hook:
+-@OS_LINUX_TRUE@	udevadm control --reload-rules && \
+-@OS_LINUX_TRUE@	test -f "/etc/redhat-release" && echo "/usr/local/lib" > /etc/ld.so.conf.d/uldaq.conf || echo "" && \
+-@OS_LINUX_TRUE@	test -f "/etc/arch-release" && echo "/usr/local/lib" > /etc/ld.so.conf.d/uldaq.conf || echo "" && \
+-@OS_LINUX_TRUE@	ldconfig
++@OS_LINUX_TRUE@	echo ""
+ 
+ @OS_LINUX_TRUE@uninstall-hook:
+ @OS_LINUX_TRUE@	test -f "/etc/ld.so.conf.d/uldaq.conf" &&  rm "/etc/ld.so.conf.d/uldaq.conf" || echo ""
