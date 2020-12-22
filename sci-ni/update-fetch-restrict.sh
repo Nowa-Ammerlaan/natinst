@@ -39,15 +39,11 @@ for rpm in ${list_rpms}; do
 	ebuild_deps=""
 	IFS=$'\n'
 	for dep in ${dependencies}; do
-		if [[ ${dep} == *"/bin/sh"* ]]; then
-			ebuild_deps+="app-shells/bash\n"
-		elif [[ ${dep} == *"bash"* ]]; then
-			ebuild_deps+="app-shells/bash\n"
-		elif [[ ${dep} == *"rpm"* ]]; then
+		if [[ ${dep} == *"rpm"* ]]; then
 			ebuild_deps+="app-arch/rpm\n"
 		elif [[ ${dep} == *"kernel"* ]]; then
 			ebuild_deps+="virtual/linux-sources\n"
-		elif [[ ${dep} == *"config("*")"* ]]; then
+		elif [[ ${dep} == "config("*")" ]]; then
 			# Some rpms have a config(PN) entry as dep
 			# skip this because we don't want to depend on self
 			continue
@@ -61,13 +57,30 @@ for rpm in ${list_rpms}; do
 			else
 				printf "      WARNING: No matching package found for library dependency: ${dep}\n"
 			fi
+		elif [[ ${dep} == "/"* ]]; then
+			# This is a path, find the package it belongs to
+			printf "   Found path dependency, checking which package it belongs to\n"
+			match=$(equery b -en ${dep%%(*})
+			if [ -n "${match}" ]; then
+				printf "      Found matching package ${match} for dependency ${dep}\n"
+				ebuild_deps+="${match}\n"
+			else
+				printf "      WARNING: No matching package found for path dependency: ${dep}\n"
+			fi
 		else
 			# Read into array so we can separate the name and version number of the dep
 			IFS=' '
 			read -ra dep_arr <<< "${dep}"
 			dep_name="${dep_arr[0]}"
 			dep_operator="${dep_arr[1]}"
-			dep_version="${dep_arr[2]}"
+			dep_version="${dep_arr[2]%%-*}"
+			dep_revision="${dep_arr[2]##*-}"
+			# strip everything after first non-numerical character in revision
+			dep_revision=$(echo "${dep_revision}" | sed 's/[^0123456789].*//' )
+			if [ -z "${dep_revision}" ]; then
+				# revision is empty, set to 0
+				dep_revision="0"
+			fi
 
 			# Check if there exists a package whit this name
 			match=$(eix --only-names --pattern --brief "${dep_name%%(*}")
@@ -83,12 +96,12 @@ for rpm in ${list_rpms}; do
 				# Add 'r' for revision dependencies
 				dep_version="${dep_version//-/-r}"
 				if [ -n "${dep_operator}" ]; then
-					if [[ "${dep_operator}" == '=' ]]; then
+					if [[ "${dep_revision}" == '0' && "${dep_operator}" == '='  ]]; then
 						# if the operator equals '=' change it to '~' to allow revisions
 						dep_operator='~'
 					fi
 					# if there is an operator add it and version number to deps
-					ebuild_deps+="${dep_operator}$(basename $(pwd))/${dep_name}-${dep_version}\n"
+					ebuild_deps+="${dep_operator}$(basename $(pwd))/${dep_name}-${dep_version}-r${dep_revision}\n"
 				else
 					# if not then just add the name to deps
 					ebuild_deps+="$(basename $(pwd))/${dep_name}\n"
@@ -135,7 +148,7 @@ SLOT="0"
 
 RESTRICT="bindist mirror fetch"
 
-DEPEND="
+RDEPEND="
 ${ebuild_deps}
 "
 
