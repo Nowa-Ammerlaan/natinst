@@ -31,8 +31,10 @@ case "${EAPI:-0}" in
 		;;
 esac
 
-# Need rpm to extract scripts
+# Need rpm to extract scripts, we also need it in the pkg_rm phases
+# so it has to be both BDEPEND and RDEPEND
 BDEPEND="app-arch/rpm"
+RDEPEND="app-arch/rpm"
 
 # Otherwise we get the S does not exist error
 S="${WORKDIR}"
