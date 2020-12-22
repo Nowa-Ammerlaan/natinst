@@ -44,6 +44,12 @@ QA_PREBUILT="*"
 # as it is not guaranteed to exist when using binpkgs
 RESTRICT="bindist"
 
+# @ECLASS-VARIABLE: RPM_SCRIPT_RUNNER
+# @DESCRIPTION:
+# Set which shell should run the rpm pre/post(un)install
+# scripts. Defaults to bash, can include extra arguments.
+: ${RPM_SCRIPT_RUNNER:="bash"}
+
 # @FUNCTION: rpm-extended_src_compile
 # @DESCRIPTION:
 # As everything in the rpm file is prebuilt
@@ -84,9 +90,9 @@ rpm-extended_src_install() {
 # and execute it in the correct phase
 rpm-extended_pkg_preinst() {
 	for x in ${A}; do
-		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n '/preinstall scriptlet (using \/bin\/sh):/,/scriptlet (using \/bin\/sh)/{//!p;}' > "preinst-${x}.sh"
+		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n -E '/^preinstall/,/^postinstall|^preuninstall|^postuninstall|^verify/{//!p;}' > "preinst-${x}.sh"
 		chmod +x "preinst-${x}.sh"
-		bash "preinst-${x}.sh"
+		${RPM_SCRIPT_RUNNER} "preinst-${x}.sh"
 	done
 }
 
@@ -97,9 +103,9 @@ rpm-extended_pkg_preinst() {
 # and execute it in the correct phase
 rpm-extended_pkg_postinst() {
 	for x in ${A}; do
-		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n '/postinstall scriptlet (using \/bin\/sh):/,/scriptlet (using \/bin\/sh)/{//!p;}' > "postinst-${x}.sh"
+		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n -E '/^postinstall/,/^preuninstall|^postuninstall|^verify|^preinstall/{//!p;}' > "postinst-${x}.sh"
 		chmod +x "postinst-${x}.sh"
-		bash "postinst-${x}.sh"
+		${RPM_SCRIPT_RUNNER} "postinst-${x}.sh"
 	done
 }
 
@@ -110,9 +116,9 @@ rpm-extended_pkg_postinst() {
 # and execute it in the correct phase
 rpm-extended_pkg_prerm() {
 	for x in ${A}; do
-		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n '/preuninstall scriptlet (using \/bin\/sh):/,/scriptlet (using \/bin\/sh)/{//!p;}' > "prerm-${x}.sh"
+		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n -E '/^preuninstall/,/^postuninstall|^verify|^preinstall|^postinstall/{//!p;}' > "prerm-${x}.sh"
 		chmod +x "prerm-${x}.sh"
-		bash "prerm-${x}.sh"
+		${RPM_SCRIPT_RUNNER} "prerm-${x}.sh"
 	done
 }
 
@@ -123,9 +129,9 @@ rpm-extended_pkg_prerm() {
 # and execute it in the correct phase
 rpm-extended_pkg_postrm() {
 	for x in ${A}; do
-		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n '/postuninstall scriptlet (using \/bin\/sh):/,/scriptlet (using \/bin\/sh)/{//!p;}' > "postrm-${x}.sh"
+		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n -E '/^postuninstall/,/^verify|^preinstall|^postinstall|^preuninstall/{//!p;}' > "postrm-${x}.sh"
 		chmod +x "postrm-${x}.sh"
-		bash "postrm-${x}.sh"
+		${RPM_SCRIPT_RUNNER} "postrm-${x}.sh"
 	done
 }
 
