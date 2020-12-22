@@ -29,6 +29,10 @@ for rpm in ${list_rpms}; do
 		# url is empty, set a sensible default
 		homepage="https://${rpm_location}"
 	fi
+	# Remove brackets and replace http with https if necessary
+	homepage="${homepage%%>*}"
+	homepage="${homepage##*<}"
+	homepage="${homepage//http:/https:}"
 	dependencies=$(rpm -qR "${rpm}")
 
 	# Skip unnecessary dependencies
