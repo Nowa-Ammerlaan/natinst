@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<catmetadata>
+	<longdescription lang="en">
+		Drivers and libraries for Pico Technology devices.
+		Ebuilds are generated with the included script from the dedicated openSUSE rpm repository provided by Pico Technology.
+	</longdescription>
+</catmetadata>
