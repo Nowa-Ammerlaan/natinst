@@ -17,6 +17,46 @@ This means that it is __not__ possible to interact with GPIB to USB devices in L
 You can still use the open source driver `sci-libs/linux-gpib` to interact with these devices using Python.
 On the other hand, `sci-libs/linux-gpib` currently does __not__ support GPIB to ENET devices, which are supported by `sci-ni/ni_4882`.
 
+After installng any National Instruments driver package (e.g. `sci-ni/ni_visa`), the driver will first need to be built for your kernel. 
+To do this use `sys-kernel/dkms`, the driver should have been automatically added to the dkms database in the driver's package post-install phase. 
+You can view all drivers added to the database with:
+
+```
+dkms status
+```
+
+Build all drivers for the currently running kernel with:
+
+
+```
+dkms autoinstall
+```
+
+If you encounter any issues building the drivers for your kernel, re-try with the preceeding LTS kernel release, e.g.:
+
+```
+emerge gentoo-sources:5.4.85
+dkms autoinstall -k 5.4.85-gentoo
+```
+
+At the time of writing the latest kernel version compatible with the NI-drivers is 5.4.
+
+Now reboot to the kernel you built the modules for, and start the relevant service with:
+
+```
+rc-service nipal start
+```
+
+Note that simply running `modprobe nipalk` is not enough. 
+Applications such as `visaconf` require the service to be running, otherwise it will fail with an error suggesting that the module `nipalk` is not loaded even if the module actually is loaded.
+
+Optionally, add the service to the default runlevel to automatically start it at boot:
+
+```
+rc-update add nipal default
+```
+
+Now you should be able to run `visaconf` from the terminal or through the desktop shortcut to configure VISA.
 
 ### Disclaimer
 
