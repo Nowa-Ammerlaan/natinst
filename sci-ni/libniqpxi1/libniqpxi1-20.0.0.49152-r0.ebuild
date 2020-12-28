@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="Library for querying PXI information"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/libniqpxi1-20.0.0.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,10 +17,10 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 app-shells/bash
->=sci-ni/ni_euladepot-20.0.0
->=sci-ni/ni_pxipf_errors-19.5.0
->=sci-ni/ni_pxisa_compliance-19.5.0
+>=sci-ni/ni_euladepot-20.0.0-r0
+>=sci-ni/ni_pxipf_errors-19.5.0-r0
+>=sci-ni/ni_pxisa_compliance-19.5.0-r0
 "

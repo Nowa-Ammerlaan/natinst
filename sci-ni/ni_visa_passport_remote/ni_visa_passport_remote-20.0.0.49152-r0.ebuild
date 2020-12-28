@@ -7,8 +7,8 @@ EAPI=7
 
 inherit rpm-extended
 
-DESCRIPTION="Support for NI-VISA applications communicating to systems running NI-VISA Server"
-HOMEPAGE="http://www.ni.com/linux/"
+DESCRIPTION="Support for NI-VISA applications communicating with NI-VISA Server"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-visa-passport-remote-20.0.0.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,8 +17,8 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 sci-ni/libvisa
->=sci-ni/ni_euladepot-18.2.1
+>=sci-ni/ni_euladepot-18.2.1-r0
 "

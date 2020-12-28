@@ -17,10 +17,10 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 app-shells/bash
->=sci-ni/ni_kal-19.2.0
->=sci-ni/ni_rio_dkms-19.0.0
+>=sci-ni/ni_kal-19.2.0-r0
+>=sci-ni/ni_rio_dkms-19.0.0-r0
 sys-kernel/dkms
 "

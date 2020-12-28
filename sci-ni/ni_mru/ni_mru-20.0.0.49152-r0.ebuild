@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="NI MX Routing Utility"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-mru-20.0.0.49152-0+f0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,16 +17,16 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 sci-ni/libnimru2u2
->=sci-ni/ni_dim-20.0.0
->=sci-ni/ni_kal-20.0
->=sci-ni/ni_mdbg-20.0.0
->=sci-ni/ni_mru_dkms-20.0
->=sci-ni/ni_mxdf-20.0.0
->=sci-ni/ni_orb-20.0
->=sci-ni/ni_pal-20.0
->=sci-ni/ni_roco-20.0
->=sci-ni/ni_routing_errors-20.0.0
+>=sci-ni/ni_dim-20.0.0-r0
+>=sci-ni/ni_kal-20.0-r0
+>=sci-ni/ni_mdbg-20.0.0-r0
+>=sci-ni/ni_mru_dkms-20.0-r0
+>=sci-ni/ni_mxdf-20.0.0-r0
+>=sci-ni/ni_orb-20.0-r0
+>=sci-ni/ni_pal-20.0-r0
+>=sci-ni/ni_roco-20.0-r0
+>=sci-ni/ni_routing_errors-20.0.0-r0
 "

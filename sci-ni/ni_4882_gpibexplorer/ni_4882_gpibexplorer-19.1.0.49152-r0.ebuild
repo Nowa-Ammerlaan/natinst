@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="NI-488.2 GPIB explorer utility package"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-488.2-gpibexplorer-19.1.0.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,15 +17,15 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
->=sci-ni/labview_2019_rte-19.0.0
+>=sci-ni/labview_2019_rte-19.0.0-r0
 sci-ni/libni4882
->=sci-ni/ni_4882_documentation-19.1.0
->=sci-ni/ni_4882_gpibintctrl-19.1.0.49152
->=sci-ni/ni_4882_gpibtroubleshooting-19.1.0.49152
->=sci-ni/ni_4882_sysapi_support-19.1.0
->=sci-ni/ni_avahi_client-19.0.0
->=sci-ni/ni_syscfg_runtime-19.0.0
+>=sci-ni/ni_4882_documentation-19.1.0-r0
+>=sci-ni/ni_4882_gpibintctrl-19.1.0.49152-r0
+>=sci-ni/ni_4882_gpibtroubleshooting-19.1.0.49152-r0
+>=sci-ni/ni_4882_sysapi_support-19.1.0-r0
+>=sci-ni/ni_avahi_client-19.0.0-r0
+>=sci-ni/ni_syscfg_runtime-19.0.0-r0
 sys-devel/gcc
 "

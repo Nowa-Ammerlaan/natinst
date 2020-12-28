@@ -7,8 +7,8 @@ EAPI=7
 
 inherit rpm-extended
 
-DESCRIPTION="Sync support for using PXI Sync Modules or any NI controller that supports RTOS"
-HOMEPAGE="http://www.ni.com/linux/"
+DESCRIPTION="Support for NI timing and synchronization modules (metapackage)"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-sync-20.1.0.49153-0+f1.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,8 +17,8 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 sci-ni/libnisync1
->=sci-ni/ni_sync_pxie6674_hwsupport-20.1
+>=sci-ni/ni_sync_pxie6674_hwsupport-20.1-r0
 "

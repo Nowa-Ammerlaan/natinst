@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="NI-TClk Runtime (metapackage)"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-tclk-20.0.0.49152-0+f0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,9 +17,9 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
->=sci-ni/ni_tclk_devel-20.0.0
->=sci-ni/ni_tclk_errors-20.0.0
->=sci-ni/ni_tclk_libs-20.0.0
+>=sci-ni/ni_tclk_devel-20.0.0-r0
+>=sci-ni/ni_tclk_errors-20.0.0-r0
+>=sci-ni/ni_tclk_libs-20.0.0-r0
 "

@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="VISA Shared Components on Linux (metapackage)"
-HOMEPAGE="http://www.ivifoundation.org"
+HOMEPAGE="https://www.ivifoundation.org"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/visa-shared-7.0.0-1.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,8 +17,8 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 sci-ni/libivivisa0
->=sci-ni/libivivisa0_devel-7.0.0
+>=sci-ni/libivivisa0_devel-7.0.0-r0
 "

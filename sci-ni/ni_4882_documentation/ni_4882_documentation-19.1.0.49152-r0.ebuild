@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="NI-488.2 documentation package"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-488.2-documentation-19.1.0.49152-0+f0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,6 +17,6 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 "

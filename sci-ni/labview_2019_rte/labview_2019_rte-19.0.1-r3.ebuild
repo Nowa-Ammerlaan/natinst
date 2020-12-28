@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="LabVIEW Run-Time Engine"
-HOMEPAGE="http://www.ni.com/linux"
+HOMEPAGE="https://www.ni.com/linux"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/labview-2019-rte-19.0.1-3.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,7 +17,7 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 app-shells/bash
 "

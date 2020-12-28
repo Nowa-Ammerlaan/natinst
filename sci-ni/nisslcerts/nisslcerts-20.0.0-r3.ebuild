@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="NI SSL Certificates 20.0"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/nisslcerts-20.0.0-3.0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,7 +17,7 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 app-misc/ca-certificates
 app-shells/bash

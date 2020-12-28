@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="End User License Agreement documents"
-HOMEPAGE="http://www.ni.com/legal/"
+HOMEPAGE="https://www.ni.com/legal/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-euladepot-20.1.0.49152-0+f0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,6 +17,6 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 "

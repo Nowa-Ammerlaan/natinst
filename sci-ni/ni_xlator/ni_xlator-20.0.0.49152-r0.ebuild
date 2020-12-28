@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="NI error message translation and localization library (metapackage)"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-xlator-20.0.0.49152-0+f0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,8 +17,8 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 sci-ni/libnixlator1
->=sci-ni/ni_apal_errors-19.0
+>=sci-ni/ni_apal_errors-19.0-r0
 "

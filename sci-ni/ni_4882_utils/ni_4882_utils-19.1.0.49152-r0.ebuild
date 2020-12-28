@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="NI-488.2 Configuration Utilities for Linux (metapackage)"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-488.2-utils-19.1.0.49152-0+f0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,9 +17,9 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
->=sci-ni/ni_4882_gpibexplorer-19.1.0
->=sci-ni/ni_4882_gpibintctrl-19.1.0
->=sci-ni/ni_4882_gpibtroubleshooting-19.1.0
+>=sci-ni/ni_4882_gpibexplorer-19.1.0-r0
+>=sci-ni/ni_4882_gpibintctrl-19.1.0-r0
+>=sci-ni/ni_4882_gpibtroubleshooting-19.1.0-r0
 "

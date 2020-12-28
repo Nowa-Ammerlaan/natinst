@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="NI-Sync API for LabVIEW 2019"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-sync-labview-2019-api-20.1.0.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,7 +17,7 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 sci-ni/labview_2019_core
 sci-ni/libnisync1

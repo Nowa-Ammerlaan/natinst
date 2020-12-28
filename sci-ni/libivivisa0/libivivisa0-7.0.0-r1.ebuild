@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="VISA API library with support for multiple vendor implementations"
-HOMEPAGE="http://www.ivifoundation.org"
+HOMEPAGE="https://www.ivifoundation.org"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/libivivisa0-7.0.0-1.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,9 +17,9 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 app-shells/bash
->=sci-ni/libivivisa_confmgr0-7.0.0
->=sci-ni/libivivisa_utilities0-7.0.0
+>=sci-ni/libivivisa_confmgr0-7.0.0-r0
+>=sci-ni/libivivisa_utilities0-7.0.0-r0
 "

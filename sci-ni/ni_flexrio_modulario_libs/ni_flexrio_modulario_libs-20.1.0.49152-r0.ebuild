@@ -8,7 +8,7 @@ EAPI=7
 inherit rpm-extended
 
 DESCRIPTION="Libraries for NI FlexRIO with Modular IO"
-HOMEPAGE="http://www.ni.com/linux/"
+HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/ni-flexrio-modulario-libs-20.1.0.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,13 +17,13 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 app-shells/bash
->=sci-ni/ni_flexrio_errors-20.1.0
->=sci-ni/ni_fpga_interface-18.1.0
->=sci-ni/ni_rio-18.1.0
->=sci-ni/ni_syscfg_runtime-18.1.0
+>=sci-ni/ni_flexrio_errors-20.1.0-r0
+>=sci-ni/ni_fpga_interface-18.1.0-r0
+>=sci-ni/ni_rio-18.1.0-r0
+>=sci-ni/ni_syscfg_runtime-18.1.0-r0
 sys-devel/gcc
 sys-libs/glibc
 "

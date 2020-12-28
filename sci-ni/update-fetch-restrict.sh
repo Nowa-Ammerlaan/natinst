@@ -16,6 +16,9 @@ list_rpms="$(ls -1 ${rpm_location}*.rpm)"
 for rpm in ${list_rpms}; do
 	printf "\nFound ${rpm}\n"
 
+	# clear variables before we start
+	unset name version revision description homepage dependencies
+
 	name=$(rpm -q "${rpm}" --qf "%{NAME}\n")
 	version=$(rpm -q "${rpm}" --qf "%{VERSION}\n")
 	revision=$(rpm -q "${rpm}" --qf "%{RELEASE}\n" | sed 's/[^0123456789].*//')
@@ -35,7 +38,7 @@ for rpm in ${list_rpms}; do
 	homepage="${homepage//http:/https:}"
 	dependencies=$(rpm -qR "${rpm}")
 
-	# Skip unnecessary dependencies
+	# Process dependencies
 	ebuild_deps=""
 	IFS=$'\n'
 	for dep in ${dependencies}; do
@@ -68,16 +71,23 @@ for rpm in ${list_rpms}; do
 				printf "      WARNING: No matching package found for path dependency: ${dep}\n"
 			fi
 		else
+			# clear variables before we start
+			unset dep_name dep_operator dep_version dep_revision
+
 			# Read into array so we can separate the name and version number of the dep
 			IFS=' '
 			read -ra dep_arr <<< "${dep}"
+
 			dep_name="${dep_arr[0]}"
 			dep_operator="${dep_arr[1]}"
-			dep_version="${dep_arr[2]%%-*}"
-			dep_revision="${dep_arr[2]##*-}"
-			# strip everything after first non-numerical character in revision
-			dep_revision=$(echo "${dep_revision}" | sed 's/[^0123456789].*//' )
-			if [ -z "${dep_revision}" ]; then
+			# If the version part contains '-' than separate it into version and revision
+			if [[ "${dep_arr[2]}" == *"-"* ]]; then
+				dep_version="${dep_arr[2]%%-*}"
+				dep_revision="${dep_arr[2]##*-}"
+				# strip everything after first non-numerical character in revision
+				dep_revision=$(echo "${dep_revision}" | sed 's/[^0123456789].*//' )
+			else
+				dep_version="${dep_arr[2]}"
 				# revision is empty, set to 0
 				dep_revision="0"
 			fi

@@ -18,7 +18,7 @@ SLOT="0"
 RESTRICT="bindist mirror fetch"
 
 DEPEND="
-acct-group/avahi
+net-dns/avahi
 app-arch/rpm
 app-shells/bash
 sci-ni/nicurli
