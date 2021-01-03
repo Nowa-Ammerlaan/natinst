@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-ebuilds.sh
@@ -33,7 +33,7 @@ dev-dotnet/gtk-sharp
 =sci-pt/libps5000-2.1.40-r3
 =sci-pt/libps5000a-2.1.40-r5
 =sci-pt/libps6000-2.1.40-r6
-~sci-pt/libps6000a-1.0.40-r0
+~sci-pt/libps6000a-1.0.40
 =sci-pt/libusbdrdaq-2.0.40-r1
 dev-lang/mono
 "

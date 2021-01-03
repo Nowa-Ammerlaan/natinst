@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-ebuilds.sh
@@ -20,9 +20,9 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 app-shells/bash
-~sci-ni/ni_4882_config-20.0.0.49152-r0
-~sci-ni/ni_4882_dkms-20.0.0.49152-r0
->=sci-ni/ni_4882_gpibenumsvc-20.0.0.49152-r0
->=sci-ni/ni_pal-20.0.0-r0
+~sci-ni/ni_4882_config-20.0.0.49152
+~sci-ni/ni_4882_dkms-20.0.0.49152
+>=sci-ni/ni_4882_gpibenumsvc-20.0.0.49152
+>=sci-ni/ni_pal-20.0.0
 sys-devel/gcc
 "

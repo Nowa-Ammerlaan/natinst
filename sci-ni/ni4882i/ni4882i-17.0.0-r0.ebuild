@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-fetch-restrict.sh
@@ -20,12 +20,12 @@ RESTRICT="bindist mirror fetch"
 RDEPEND="
 app-arch/rpm
 app-shells/bash
->=sci-ni/labview_2015_rte-15.0.1-r0
-~sci-ni/ni4882ki-17.0.0-r0
+>=sci-ni/labview_2015_rte-15.0.1
+~sci-ni/ni4882ki-17.0.0
 sci-ni/nicurli
->=sci-ni/niiotracei-17.0.0-r0
->=sci-ni/nimdnsresponder-17.0.0-r0
->=sci-ni/ni_pal-17.0.0-r0
+>=sci-ni/niiotracei-17.0.0
+>=sci-ni/nimdnsresponder-17.0.0
+>=sci-ni/ni_pal-17.0.0
 sci-ni/nisyscfgi
 "
 
