@@ -1,4 +1,7 @@
 # VISA, DAQ and NatInst ebuild repository
+[![pkgcheck](https://github.com/gentoo/sci/workflows/pkgcheck/badge.svg)](https://github.com/gentoo/sci/actions?query=workflow%3Apkgcheck)
+[![repoman](https://github.com/gentoo/sci/workflows/repoman/badge.svg)](https://github.com/gentoo/sci/actions?query=workflow%3Arepoman)
+
 This ebuild repository contains ebuilds for: VISA (Virtual Instrument Software Architecture), DAQ (Data acquisition), National Instruments devices, and LabVIEW.
 The ebuilds in the `sci-ni/` category are generated with two scripts.
 The first generates "ebuild-wrappers" around the rpm files located at [download.ni.com/ni-linux-desktop](https://download.ni.com/ni-linux-desktop/). The second does the same for a collection of fetch-restricted rpm files located in a local directory.
