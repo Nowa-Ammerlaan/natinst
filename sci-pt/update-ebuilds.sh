@@ -176,7 +176,7 @@ EOF
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>andrewammerlaan@riseup.net</email>
+		<email>andrewammerlaan@gentoo.org</email>
 		<name>Andrew Ammerlaan</name>
 	</maintainer>
 </pkgmetadata>

@@ -3,9 +3,9 @@
 
 # @ECLASS: rpm-extended.eclass
 # @MAINTAINER:
-# Andrew Ammerlaan <andrewammerlaan@riseup.net>
+# Andrew Ammerlaan <andrewammerlaan@gentoo.org>
 # @AUTHOR:
-# Andrew Ammerlaan <andrewammerlaan@riseup.net>
+# Andrew Ammerlaan <andrewammerlaan@gentoo.org>
 # Extension of the rpm.eclass by Alastair Tse <liquidx@gentoo.org>
 # @SUPPORTED_EAPIS: 6 7
 # @BLURB: An eclass that helps automating the creation of ebuilds for software only distributed through rpm
