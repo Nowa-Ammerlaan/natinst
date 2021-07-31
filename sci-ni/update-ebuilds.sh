@@ -111,6 +111,8 @@ for rpm in ${list_rpms}; do
 				dep_name="${dep_name//-/_}"
 				dep_name="${dep_name//.}"
 				dep_name="${dep_name%%(*}"
+				# append the current category
+				dep_name="$(basename $(pwd))/${dep_name}"
 			fi
 			# Add 'r' for revision dependencies
 			dep_version="${dep_version//-/-r}"
@@ -121,14 +123,14 @@ for rpm in ${list_rpms}; do
 						dep_operator='~'
 					fi
 					# revision is zero, so don't set a revision
-					ebuild_deps+="${dep_operator}$(basename $(pwd))/${dep_name}-${dep_version}\n"
+					ebuild_deps+="${dep_operator}${dep_name}-${dep_version}\n"
 				else
 					# if there is an operator add it and version number to deps
-					ebuild_deps+="${dep_operator}$(basename $(pwd))/${dep_name}-${dep_version}-r${dep_revision}\n"
+					ebuild_deps+="${dep_operator}${dep_name}-${dep_version}-r${dep_revision}\n"
 				fi
 			else
 				# if not then just add the name to deps
-				ebuild_deps+="$(basename $(pwd))/${dep_name}\n"
+				ebuild_deps+="${dep_name}\n"
 			fi
 		fi
 	done
