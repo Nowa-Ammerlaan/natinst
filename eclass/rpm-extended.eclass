@@ -7,7 +7,7 @@
 # @AUTHOR:
 # Andrew Ammerlaan <andrewammerlaan@gentoo.org>
 # Extension of the rpm.eclass by Alastair Tse <liquidx@gentoo.org>
-# @SUPPORTED_EAPIS: 6 7
+# @SUPPORTED_EAPIS: 7 8
 # @BLURB: An eclass that helps automating the creation of ebuilds for software only distributed through rpm
 # @DESCRIPTION:
 # This extends the rpm eclass to also installs *all* files in the rpm, and
