@@ -8,6 +8,11 @@
 # - app-portage/repoman
 # - app-admin/sudo
 
+if ! command -v rpm &> /dev/null; then
+    echo "Please install app-arch/rpm"
+    exit
+fi
+
 # Location on the internet of the rpm files, without https, this should be the only thing you have to edit
 rpm_location="download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/"
 
@@ -147,12 +152,12 @@ for rpm in ${list_rpms}; do
 	pushd "${name}" > /dev/null # make it silent
 
 	cat << EOF > "${name}-${version}-r${revision}.ebuild"
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../$(basename "$0")
 
-EAPI=7
+EAPI=8
 
 inherit rpm-extended
 
