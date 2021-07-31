@@ -104,31 +104,31 @@ for rpm in ${list_rpms}; do
 			match=$(eix --only-names --pattern --brief "${dep_name%%(*}")
 			if [ -n "${match}" ]; then
 				printf "   Found matching package ${match} for dependency ${dep_name}\n"
-				ebuild_deps+="${match}\n"
+				dep_name="${match}"
 			else
 				printf "   Did not find match for ${dep_name}, assuming this is a new package from this rpm repo\n"
 				# Replace dash with underscore and remove dots from the new dep name, strip everything after (
 				dep_name="${dep_name//-/_}"
 				dep_name="${dep_name//.}"
 				dep_name="${dep_name%%(*}"
-				# Add 'r' for revision dependencies
-				dep_version="${dep_version//-/-r}"
-				if [ -n "${dep_operator}" ]; then
-					if [[ "${dep_revision}" == '0' ]]; then
-						if [[ "${dep_operator}" == '='  ]]; then
-							# if the operator equals '=' change it to '~' to allow revisions
-							dep_operator='~'
-						fi
-						# revision is zero, so don't set a revision
-						ebuild_deps+="${dep_operator}$(basename $(pwd))/${dep_name}-${dep_version}\n"
-					else
-						# if there is an operator add it and version number to deps
-						ebuild_deps+="${dep_operator}$(basename $(pwd))/${dep_name}-${dep_version}-r${dep_revision}\n"
+			fi
+			# Add 'r' for revision dependencies
+			dep_version="${dep_version//-/-r}"
+			if [ -n "${dep_operator}" ]; then
+				if [[ "${dep_revision}" == '0' ]]; then
+					if [[ "${dep_operator}" == '='  ]]; then
+						# if the operator equals '=' change it to '~' to allow revisions
+						dep_operator='~'
 					fi
+					# revision is zero, so don't set a revision
+					ebuild_deps+="${dep_operator}$(basename $(pwd))/${dep_name}-${dep_version}\n"
 				else
-					# if not then just add the name to deps
-					ebuild_deps+="$(basename $(pwd))/${dep_name}\n"
+					# if there is an operator add it and version number to deps
+					ebuild_deps+="${dep_operator}$(basename $(pwd))/${dep_name}-${dep_version}-r${dep_revision}\n"
 				fi
+			else
+				# if not then just add the name to deps
+				ebuild_deps+="$(basename $(pwd))/${dep_name}\n"
 			fi
 		fi
 	done
