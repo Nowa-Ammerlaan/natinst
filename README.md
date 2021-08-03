@@ -17,7 +17,7 @@ The above diagram shows how you can use the different drivers and VISA software 
 The devices supported by `sci-libs/linux-gpib` can be found [here](https://linux-gpib.sourceforge.io/doc_html/supported-hardware.html) and the devices supported by `sci-ni/ni_4882` can be found [here](https://www.ni.com/en-us/support/documentation/supplemental/06/ni-488-2-supported-versions-for-gpib-devices-and-modules.html).
 Note that, at the time of writing, `sci-ni/ni_4882` does __not__ support GPIB to USB devices due to the Linux kernel's USB driver stack being licensed GPL.
 This means that it is __not__ possible to interact with GPIB to USB devices in LabVIEW on Linux.
-You can still use the open source driver `sci-libs/linux-gpib` to interact with these devices using Python.
+You can still use the open source driver `sci-libs/linux-gpib` to interact with these devices using e.g. Python.
 On the other hand, `sci-libs/linux-gpib` currently does __not__ support GPIB to ENET devices, which are supported by `sci-ni/ni_4882`.
 
 After installng any National Instruments driver package (e.g. `sci-ni/ni_visa`), the driver will first need to be built for your kernel. 
