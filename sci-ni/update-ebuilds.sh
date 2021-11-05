@@ -14,7 +14,7 @@ if ! command -v rpm &> /dev/null; then
 fi
 
 # Location on the internet of the rpm files, without https, this should be the only thing you have to edit
-rpm_location="download.ni.com/ni-linux-desktop/2020.07/rpm/ni/el8/"
+rpm_location="download.ni.com/ni-linux-desktop/2021/Q4/rpm/ni/el8/"
 
 printf "Downloading rpms from https: ${rpm_location}"
 wget -rkpN -e robots=off -A rpm --no-parent -c  "https://${rpm_location}"

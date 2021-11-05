@@ -1,14 +1,14 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-fetch-restrict.sh
 
-EAPI=7
+EAPI=8
 
 inherit rpm-extended
 
 DESCRIPTION="NI Example Finder core files"
-HOMEPAGE="http://www.ni.com/linux"
+HOMEPAGE="https://www.ni.com/linux"
 SRC_URI="niexfinder-base-1.0-59.noarch.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,7 +17,7 @@ SLOT="0"
 
 RESTRICT="bindist mirror fetch"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 app-shells/bash
 "

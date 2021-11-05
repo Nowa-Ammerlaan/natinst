@@ -1,14 +1,14 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-fetch-restrict.sh
 
-EAPI=7
+EAPI=8
 
 inherit rpm-extended
 
 DESCRIPTION="NI Example Finder executable"
-HOMEPAGE="http://www.ni.com/linux"
+HOMEPAGE="https://www.ni.com/linux"
 SRC_URI="niexfinder-exe-1.0-59.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
@@ -17,10 +17,10 @@ SLOT="0"
 
 RESTRICT="bindist mirror fetch"
 
-DEPEND="
+RDEPEND="
 app-arch/rpm
 app-shells/bash
-sci-ni/labview_2020_rte
+sci-ni/labview_2021_rte
 >=sci-ni/niexfinder_base-1.0-r59
 "
 
