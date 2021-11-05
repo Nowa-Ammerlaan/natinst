@@ -14,7 +14,7 @@ if ! command -v rpm &> /dev/null; then
 fi
 
 # Location on the internet of the rpm files, without https, this should be the only thing you have to edit
-rpm_location="labs.picotech.com/rpm/noarch/"
+rpm_location="labs.picotech.com/rpm/x86_64/"
 
 printf "Downloading rpms from https: ${rpm_location}"
 wget -rkpN -e robots=off -A rpm --no-parent -c  "https://${rpm_location}"
