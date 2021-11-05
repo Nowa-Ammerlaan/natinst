@@ -34,4 +34,5 @@ app-shells/bash
 =sci-pt/libps6000-2.1.0-r6
 =sci-pt/libusbdrdaq-2.0.0-r1
 >=sci-pt/picomono-4.6.2.16-r1
+dev-lang/mono[-minimal]
 "

@@ -34,4 +34,5 @@ app-shells/bash
 =sci-pt/libps6000-2.1.34-r6
 ~sci-pt/libps6000a-1.0.34
 =sci-pt/libusbdrdaq-2.0.34-r1
+dev-lang/mono[-minimal]
 "
