@@ -65,3 +65,7 @@ Now you should be able to run `visaconf` from the terminal or through the deskto
 
 Neither myself nor this repository is in any way associated with National Instruments.
 National Instruments cannot be held accountable for the ebuilds contained in this repository, nor can I be held accountable for the software contained in the rpm files distributed by National Instruments.
+
+## Upgrading LabVIEW
+
+I recommend removing the old LabVIEW version with `emerge -C` before installing the new version. If you do it the other way around the uninstall scripts of the old version will remove files that the new version still needs. Note that unmerging LabVIEW leaves some files behind in `/usr/local`, `/etc/`, `/usr/share/applications` and possibly other locations as well, you can remove these files manually.
