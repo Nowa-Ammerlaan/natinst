@@ -17,7 +17,7 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-KERNEL_MAX="5.4"
+KERNEL_MAX="5.5"
 
 RDEPEND="
 app-arch/rpm
