@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-ebuilds.sh
@@ -17,6 +17,8 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
+KERNEL_MAX="5"
+
 RDEPEND="
 app-arch/rpm
 app-shells/bash
@@ -24,5 +26,9 @@ sys-devel/binutils
 sys-devel/gcc
 sys-devel/make
 sys-kernel/dkms
-virtual/linux-sources
+|| (
+	<sys-kernel/gentoo-sources-${KERNEL_MAX}
+	<sys-kernel/vanilla-sources-${KERNEL_MAX}
+	<sys-kernel/rt-sources-${KERNEL_MAX}
+)
 "

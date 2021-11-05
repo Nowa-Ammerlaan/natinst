@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-fetch-restrict.sh
@@ -17,10 +17,16 @@ SLOT="0"
 
 RESTRICT="bindist mirror fetch"
 
+KERNEL_MAX="5"
+
 RDEPEND="
 app-arch/rpm
 app-shells/bash
-virtual/linux-sources
+|| (
+	<sys-kernel/gentoo-sources-${KERNEL_MAX}
+	<sys-kernel/vanilla-sources-${KERNEL_MAX}
+	<sys-kernel/rt-sources-${KERNEL_MAX}
+)
 "
 
 pkg_nofetch() {
