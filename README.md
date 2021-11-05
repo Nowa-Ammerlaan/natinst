@@ -38,11 +38,11 @@ dkms autoinstall
 If you encounter any issues building the drivers for your kernel, re-try with the preceeding LTS kernel release, e.g.:
 
 ```
-emerge gentoo-sources:5.4.85
-dkms autoinstall -k 5.4.85-gentoo
+emerge gentoo-sources:5.14.15
+dkms autoinstall -k 5.14.15-gentoo
 ```
 
-At the time of writing the latest kernel version compatible with the NI-drivers is 5.4.
+At the time of writing the latest kernel version compatible with the NI-drivers is 5.14.
 
 Now reboot to the kernel you built the modules for, and start the relevant service with:
 
