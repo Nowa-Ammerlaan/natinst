@@ -6,7 +6,6 @@
 # - app-portage/eix
 # - sys-apps/portage
 # - app-portage/repoman
-# - app-admin/sudo
 
 if ! command -v rpm &> /dev/null; then
     echo "Please install app-arch/rpm"
@@ -15,6 +14,7 @@ fi
 
 # Location on the internet of the rpm files, without https, this should be the only thing you have to edit
 rpm_location="labs.picotech.com/rpm/x86_64/"
+distdir="$(portageq distdir)"
 
 printf "Downloading rpms from https: ${rpm_location}"
 wget -rkpN -e robots=off -A rpm --no-parent -c  "https://${rpm_location}"
@@ -189,17 +189,16 @@ EOF
 </pkgmetadata>
 EOF
 
+	# No need to download everything twice
+	printf "\nMoving ${rpm} to ${distdir}\n"
+	mv "../${rpm}" "${distdir}"
+
+	# Generate manifest file
+	printf "\nGenerating Manifest files\n"
+	repoman manifest
+
 	popd > /dev/null # make it silent
 done
-
-# No need to download everything twice
-distdir="$(portageq distdir)"
-printf "\nMoving rpms to ${distdir}\n"
-sudo mv "${rpm_location}"*.rpm "${distdir}"
-
-# Generate manifest file
-printf "\nGenerating Manifest files\n"
-repoman manifest
 
 # Clean up download directory
 rm -r "${rpm_location%%/*}"
