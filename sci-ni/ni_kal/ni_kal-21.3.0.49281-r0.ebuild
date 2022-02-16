@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-ebuilds.sh
@@ -30,8 +30,6 @@ sys-kernel/dkms
 || (
 	<sys-kernel/gentoo-sources-${KERNEL_MAX}
 	<sys-kernel/vanilla-sources-${KERNEL_MAX}
-	<sys-kernel/pf-sources-${KERNEL_MAX}
 	<sys-kernel/rt-sources-${KERNEL_MAX}
-	<sys-kernel/zen-sources-${KERNEL_MAX}
 )
 "

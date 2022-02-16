@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-ebuilds.sh
@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-DAQmx Switch Device Libraries"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2021/Q4/rpm/ni/el8/ni-daqmx-switch-libs-21.3.0.49317-0+f165.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q1/rpm/ni/el8/ni-daqmx-switch-libs-21.3.0.49317-0+f165.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -24,10 +24,8 @@ sci-ni/libnidimu1
 sci-ni/libnimru2u2
 >=sci-ni/ni_daqmx_ef-21.3.0
 sci-ni/ni_daqmx_libs
-sci-ni/ni_daqmx_mio_libs
 >=sci-ni/ni_daqmx_scxi_libs-21.3.0
 >=sci-ni/ni_daqmx_switch_dkms-21.3.0
-sci-ni/ni_daqmx_switch_libs
 sci-ni/ni_mdbg
 sci-ni/ni_mxdf
 sci-ni/ni_mxs

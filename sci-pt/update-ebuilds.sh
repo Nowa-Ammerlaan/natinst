@@ -154,7 +154,7 @@ for rpm in ${list_rpms}; do
 	pushd "${name}" > /dev/null # make it silent
 
 	cat << EOF > "${name}-${version}-r${revision}.ebuild"
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../$(basename "$0")
