@@ -1,6 +1,5 @@
 # VISA, DAQ and NatInst ebuild repository
 [![pkgcheck](https://github.com/AndrewAmmerlaan/natinst/workflows/pkgcheck/badge.svg)](https://github.com/AndrewAmmerlaan/natinst/actions?query=workflow%3Apkgcheck)
-[![repoman](https://github.com/AndrewAmmerlaan/natinst/workflows/repoman/badge.svg)](https://github.com/AndrewAmmerlaan/natinst/actions?query=workflow%3Arepoman)
 
 This ebuild repository contains ebuilds for: VISA (Virtual Instrument Software Architecture), DAQ (Data acquisition), National Instruments devices, and LabVIEW.
 The ebuilds in the `sci-ni/` category are generated with two scripts.
