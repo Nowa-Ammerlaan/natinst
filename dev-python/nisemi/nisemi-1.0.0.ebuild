@@ -19,5 +19,3 @@ KEYWORDS=""
 RDEPEND="
 	dev-python/pythonnet[${PYTHON_USEDEP}]
 "
-
-
