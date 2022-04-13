@@ -18,6 +18,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-python/future[${PYTHON_USEDEP}]
+	sci-ni/ni_fpga_interface
 "
 
 BDEPEND="test? (
