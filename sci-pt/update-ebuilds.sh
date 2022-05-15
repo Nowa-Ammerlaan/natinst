@@ -5,7 +5,8 @@
 # - app-portage/gentoolkit
 # - app-portage/eix
 # - sys-apps/portage
-# - app-portage/repoman
+# - dev-util/pkgcheck
+# - dev-util/pkgdev
 
 if ! command -v rpm &> /dev/null; then
     echo "Please install app-arch/rpm"
@@ -195,7 +196,7 @@ EOF
 
 	# Generate manifest file
 	printf "\nGenerating Manifest files\n"
-	repoman manifest
+	pkgdev manifest
 
 	popd > /dev/null # make it silent
 done
@@ -203,4 +204,4 @@ done
 # Clean up download directory
 rm -r "${rpm_location%%/*}"
 
-printf "DONE: Do a manual check with \'repoman -dx full\' to ensure everything is correct\n"
+printf "DONE: Do a manual check with \'pkgcheck scan\' to ensure everything is correct\n"

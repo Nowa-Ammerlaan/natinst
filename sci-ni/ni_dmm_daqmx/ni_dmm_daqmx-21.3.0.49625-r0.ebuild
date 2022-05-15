@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-DMM mx Device Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q1/rpm/ni/el8/ni-dmm-daqmx-21.3.0.49625-0+f473.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q2/rpm/ni/el8/ni-dmm-daqmx-21.3.0.49625-0+f473.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

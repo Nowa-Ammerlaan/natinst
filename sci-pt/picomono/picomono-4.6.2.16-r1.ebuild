@@ -26,6 +26,7 @@ dev-libs/glib
 dev-libs/libxml2
 media-libs/fontconfig
 media-libs/freetype
+media-libs/libpng-compat
 sys-apps/coreutils
 sys-devel/gcc
 sys-libs/glibc

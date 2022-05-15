@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI ICP Headers"
 HOMEPAGE="https://www.ni.com/linux/"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q1/rpm/ni/el8/ni-icp-devel-21.0.0.49152-0+f0.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q2/rpm/ni/el8/ni-icp-devel-21.0.0.49152-0+f0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

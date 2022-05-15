@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-SWITCH Runtime (metapackage)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q1/rpm/ni/el8/ni-switch-21.3.0.49353-0+f201.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q2/rpm/ni/el8/ni-switch-21.3.0.49353-0+f201.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

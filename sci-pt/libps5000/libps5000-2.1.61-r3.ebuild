@@ -20,7 +20,8 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 app-shells/bash
-virtual/libusb
+dev-libs/libusb
+sci-pt/rtld
 sys-devel/gcc
 sys-libs/glibc
 sys-libs/zlib
