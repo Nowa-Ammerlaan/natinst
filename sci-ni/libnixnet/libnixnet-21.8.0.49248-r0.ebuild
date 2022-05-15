@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 app-shells/bash
-sci-ni/glibc_locale_source
 >=sci-ni/libniapxipm215-21.8.0
 >=sci-ni/libniqpxi1-21.8.0
 >=sci-ni/libnixnet_bin-21.8.0

@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 >=sci-ni/ni_fgen_libs-21.8.0
->=sci-ni/ni_labview-22.0.0
 >=sci-ni/ni_modinst_labview_support-21.8.0
 >=sci-ni/ni_p2p_labview_support-21.8.0
 >=sci-ni/ni_tclk_labview_support-21.8.0
