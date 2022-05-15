@@ -21,7 +21,6 @@ RDEPEND="
 app-arch/rpm
 app-shells/bash
 dev-libs/libusb
-sci-pt/rtld
 sys-devel/gcc
 sys-libs/glibc
 sys-libs/zlib

@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 app-shells/bash
-sci-pt/rtld
 sys-devel/gcc
 sys-libs/glibc
 "
