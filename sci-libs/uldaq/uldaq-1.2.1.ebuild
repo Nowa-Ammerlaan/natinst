@@ -1,9 +1,9 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{7,8,9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 DOCS_BUILDER="doxygen"
 DOCS_DIR="doc"
@@ -20,6 +20,7 @@ SRC_URI="
 	https://github.com/mccdaq/uldaq/releases/download/v${PV}/lib${P}.tar.bz2 -> ${P}.tar.bz2
 	python? ( mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz -> ${P}-python.tar.gz )
 "
+S="${WORKDIR}/lib${P}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -35,8 +36,6 @@ RDEPEND="
 BDEPEND="${RDEPEND}"
 
 PATCHES=( "${FILESDIR}/${PN}-fix-make-install.patch" )
-
-S="${WORKDIR}/lib${P}"
 
 distutils_enable_sphinx docs dev-python/sphinx_rtd_theme
 
