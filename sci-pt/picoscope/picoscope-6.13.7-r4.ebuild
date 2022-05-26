@@ -34,5 +34,13 @@ app-shells/bash
 =sci-pt/libps6000-2.1.0-r6
 =sci-pt/libusbdrdaq-2.0.0-r1
 >=sci-pt/picomono-4.6.2.16-r1
-dev-lang/mono[-minimal]
+sci-pt/picomono
 "
+
+src_prepare() {
+	default
+	# Adjust launch script to launch with picomono
+	sed -i -e \
+		's/MONO_CMD=$(which mono 2>\/dev\/null)/MONO_CMD=\/opt\/picomono\/bin\/mono/g' \
+		opt/picoscope/bin/picoscope || die
+}
