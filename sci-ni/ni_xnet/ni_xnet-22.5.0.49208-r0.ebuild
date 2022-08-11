@@ -7,7 +7,7 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="NI-XNET provides support for configuring, developing, and debugging applications for prototyping, simulating, and testing CAN, LIN, and FlexRay networks. (metapackage)"
+DESCRIPTION="Support for prototyping, simulating, and testing CAN, LIN, and FlexRay networks"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/ni-xnet-22.5.0.49208-0+f56.x86_64.rpm"
 

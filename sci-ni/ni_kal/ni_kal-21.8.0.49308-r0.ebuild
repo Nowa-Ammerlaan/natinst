@@ -30,7 +30,6 @@ sys-kernel/dkms
 || (
 	<sys-kernel/gentoo-sources-${KERNEL_MAX}
 	<sys-kernel/vanilla-sources-${KERNEL_MAX}
-	<sys-kernel/pf-sources-${KERNEL_MAX}
 	<sys-kernel/rt-sources-${KERNEL_MAX}
 	<sys-kernel/zen-sources-${KERNEL_MAX}
 	<sys-kernel/gentoo-kernel-${KERNEL_MAX}

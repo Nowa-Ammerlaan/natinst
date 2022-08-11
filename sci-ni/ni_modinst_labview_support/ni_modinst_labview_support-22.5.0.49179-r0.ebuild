@@ -19,6 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
->=sci-ni/ni_labview-22.0.0
+sci-ni/labview_2022_rte
 >=sci-ni/ni_modinst_libs-22.5.0
 "

@@ -21,6 +21,6 @@ RDEPEND="
 app-arch/rpm
 >=sci-ni/libnisync1-22.5.0
 >=sci-ni/libnisync_lvprovider1-22.5.0
->=sci-ni/ni_labview-22.0.0
+sci-ni/labview_2022_rte
 >=sci-ni/ni_mxlc_labview_support-22.5.0
 "

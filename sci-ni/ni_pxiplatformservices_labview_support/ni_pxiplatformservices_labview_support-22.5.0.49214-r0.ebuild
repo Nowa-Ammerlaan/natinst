@@ -20,7 +20,7 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 >=sci-ni/ni_controllerdriver_labview_support-22.5.0
->=sci-ni/ni_labview-22.0.0
+sci-ni/labview_2022_rte
 >=sci-ni/ni_pxiplatformservices_libs-22.5.0
 >=sci-ni/ni_syscfg_labview_support-22.5.0
 "
