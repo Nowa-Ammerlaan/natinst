@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-ni/chkconfig
 >=sci-ni/libnimximgr1-22.8.0
 >=sci-ni/libnipcibrd1-22.8.0
 >=sci-ni/ni_pxiplatformservices_data-22.8.0

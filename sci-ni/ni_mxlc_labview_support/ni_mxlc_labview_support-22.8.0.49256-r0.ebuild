@@ -20,7 +20,7 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 >=sci-ni/libnimxlc3-22.8.0
->=sci-ni/ni_labview-22.0.0
+sci-ni/ni_labview_2022_core
 sys-devel/gcc:12
 sys-libs/glibc:2.2
 "

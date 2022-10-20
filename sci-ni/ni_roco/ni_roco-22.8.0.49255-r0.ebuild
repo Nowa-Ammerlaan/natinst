@@ -19,8 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-ni/chkconfig
-sci-ni/initscripts
 >=sci-ni/libnirocoapi1-22.8.0
 >=sci-ni/ni_apal_errors-22.8.0
 >=sci-ni/ni_routing_errors-22.8.0

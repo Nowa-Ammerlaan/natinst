@@ -19,6 +19,4 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-ni/chkconfig
-sci-ni/initscripts
 "

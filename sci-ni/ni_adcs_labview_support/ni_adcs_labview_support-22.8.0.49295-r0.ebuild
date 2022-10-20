@@ -26,5 +26,5 @@ app-arch/rpm
 >=sci-ni/ni_adcs_notices-22.8.0
 >=sci-ni/ni_apal_errors-22.8.0
 >=sci-ni/ni_bci_libs-22.8.0
->=sci-ni/ni_labview-22.0.0
+sci-ni/ni_labview_2022_core
 "

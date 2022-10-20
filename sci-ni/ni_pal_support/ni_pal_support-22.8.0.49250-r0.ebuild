@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 app-shells/bash:0
-sci-ni/chkconfig
 >=sci-ni/ni_pal_dkms-22.8.0
 >=sci-ni/ni_pal_errors-22.8.0
 "

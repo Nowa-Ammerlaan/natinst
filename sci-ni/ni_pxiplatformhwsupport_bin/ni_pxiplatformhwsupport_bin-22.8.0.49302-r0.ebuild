@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-ni/chkconfig
 >=sci-ni/ni_apal_errors-22.8.0
 >=sci-ni/ni_pxiplatformhwsupport_errors-22.8.0
 >=sci-ni/ni_pxiplatformsoftware_errors-22.8.0

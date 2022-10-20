@@ -19,6 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
->=sci-ni/labview_2022_core-22.3.0
+>=sci-ni/ni_labview_2022_core-22.3.0
 >=sci-ni/ni_fpga_errors-22.3.0
 "

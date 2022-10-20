@@ -19,8 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-ni/chkconfig
-sci-ni/initscripts
 >=sci-ni/libusb_ni1-20.0.0
 sys-devel/gcc:12
 sys-libs/glibc:2.2

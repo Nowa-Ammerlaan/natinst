@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-ni/chkconfig
 >=sci-ni/ni_bds-21.0.0
 >=sci-ni/ni_fpga_interface-21.0.0
 >=sci-ni/ni_kal-21.0.0

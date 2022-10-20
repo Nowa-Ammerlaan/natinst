@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-ni/chkconfig
 >=sci-ni/libnipxirm1-22.8.0
 >=sci-ni/ni_apal_errors-22.8.0
 >=sci-ni/ni_pxipf_errors-22.8.0

@@ -20,8 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 net-dns/avahi:0
-sci-ni/chkconfig
-sci-ni/initscripts
 >=sci-ni/libniqpxi1-22.8.0
 >=sci-ni/ni_avahi_client-22.8.0
 >=sci-ni/ni_daqmx_errors-22.8.0

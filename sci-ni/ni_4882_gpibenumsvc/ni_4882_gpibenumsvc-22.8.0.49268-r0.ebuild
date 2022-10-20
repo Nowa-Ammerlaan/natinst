@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-ni/chkconfig
 >=sci-ni/ni_4882_config-22.8.0
 >=sci-ni/ni_4882_dkms-22.8.0
 >=sci-ni/ni_pal-22.8.0

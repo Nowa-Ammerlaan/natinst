@@ -21,6 +21,6 @@ RDEPEND="
 app-arch/rpm
 >=sci-ni/libnidaqmx_labview-22.8.0
 >=sci-ni/ni_daqmx_ef-22.8.0
->=sci-ni/ni_labview-22.0.0
+sci-ni/ni_labview_2022_core
 >=sci-ni/ni_mxlc_labview_support-22.8.0
 "
