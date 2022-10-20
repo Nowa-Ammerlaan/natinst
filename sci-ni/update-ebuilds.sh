@@ -70,7 +70,7 @@ for rpm in ${list_rpms}; do
 		elif [[ ${dep} == *".so"* ]]; then
 			# This is a library, find the package it belongs to
 			printf "   Found library dependency, checking which package it belongs to\n"
-			match=$(qfile -qS  ${dep%%(*} | uniq)
+			match=$(qfile -q  ${dep%%(*} | uniq)
 			if [ -n "${match}" ]; then
 				printf "      Found matching package ${match} for dependency ${dep}\n"
 				ebuild_deps+="${match}\n"
@@ -80,7 +80,7 @@ for rpm in ${list_rpms}; do
 		elif [[ ${dep} == "/"* ]]; then
 			# This is a path, find the package it belongs to
 			printf "   Found path dependency, checking which package it belongs to\n"
-			match=$(qfile -qS ${dep%%(*} | uniq)
+			match=$(qfile -q ${dep%%(*} | uniq)
 			if [ -n "${match}" ]; then
 				printf "      Found matching package ${match} for dependency ${dep}\n"
 				ebuild_deps+="${match}\n"
