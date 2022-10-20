@@ -41,8 +41,11 @@ src_test() {
 }
 
 src_install() {
-	emake install DESTDIR="${ED}" LIBDIR="${ED}"/usr/$(get_libdir)/
-	use systemd && emake install-redhat DESTDIR="${ED}" LIBDIR="${ED}"/usr/$(get_libdir)/
+	if use systemd; then
+		emake install-redhat DESTDIR="${ED}" LIBDIR="${ED}"/usr/$(get_libdir)/
+	else
+		emake install DESTDIR="${ED}" LIBDIR="${ED}"/usr/$(get_libdir)/
+	fi
 	einstalldocs
 	keepdir /var/lib/dkms
 }
