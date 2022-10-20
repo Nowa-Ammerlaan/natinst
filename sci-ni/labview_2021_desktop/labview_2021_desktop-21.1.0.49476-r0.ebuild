@@ -19,7 +19,7 @@ RESTRICT="bindist mirror fetch"
 
 RDEPEND="
 app-arch/rpm
->=sci-ni/ni_labview_2021_core-21.1.0
+>=sci-ni/labview_2021_core-21.1.0
 "
 
 pkg_nofetch() {

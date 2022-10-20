@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="NI Example Finder core files"
+DESCRIPTION="LabVIEW Run-Time Application Builder"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="ni-labview-2021-example-finder-21.1.0.49476-0+f324.noarch.rpm"
+SRC_URI="ni-labview-2021-appbuild-21.1.0.49476-0+f324.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,8 +19,7 @@ RESTRICT="bindist mirror fetch"
 
 RDEPEND="
 app-arch/rpm
->=sci-ni/ni_example_finder_base-21.1.0
->=sci-ni/ni_labview_2021_example_finder_lib-21.1.0
+>=sci-ni/labview_2021_core-21.1.0
 "
 
 pkg_nofetch() {
