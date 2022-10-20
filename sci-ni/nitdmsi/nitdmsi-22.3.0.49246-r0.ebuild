@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI TDMS library"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/nitdmsi-22.3.0.49246-0+f94.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/nitdmsi-22.3.0.49246-0+f94.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

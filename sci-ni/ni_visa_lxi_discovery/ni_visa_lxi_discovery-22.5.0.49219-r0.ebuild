@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Provides the LXI Discovery Service for discovering LXI-based resources"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/ni-visa-lxi-discovery-22.5.0.49219-0+f67.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-visa-lxi-discovery-22.5.0.49219-0+f67.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,13 +19,12 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-app-shells/bash
-net-dns/avahi
+net-dns/avahi:0
 >=sci-ni/libvisa-22.5.0
 >=sci-ni/ni_avahi_client-22.5.0
 >=sci-ni/nicurli-21.3.0
 >=sci-ni/ni_euladepot-22.5.0
 >=sci-ni/ni_visa_passport_enet-22.5.0
-sys-devel/gcc
-sys-libs/glibc
+sys-devel/gcc:12
+sys-libs/glibc:2.2
 "

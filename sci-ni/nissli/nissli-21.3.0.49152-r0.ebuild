@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI SSL 21.3"
 HOMEPAGE="https://www.ni.com/linux/"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/nissli-21.3.0.49152-0+f0.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/nissli-21.3.0.49152-0+f0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-VISA Runtime (metapackage)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/ni-visa-runtime-22.5.0.49221-0+f69.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-visa-runtime-22.5.0.49221-0+f69.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

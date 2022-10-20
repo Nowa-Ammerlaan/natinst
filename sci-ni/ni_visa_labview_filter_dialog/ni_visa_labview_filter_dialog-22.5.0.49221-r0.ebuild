@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Provides resource name filtering from the VISA resource name control in LabVIEW"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/ni-visa-labview-filter-dialog-22.5.0.49221-0+f69.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-visa-labview-filter-dialog-22.5.0.49221-0+f69.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

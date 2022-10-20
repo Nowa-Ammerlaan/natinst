@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Provides support for NI-VISA GPIB applications"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/ni-visa-passport-gpib-22.5.0.49219-0+f67.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-visa-passport-gpib-22.5.0.49219-0+f67.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,8 +19,8 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sys-libs/glibc
 >=sci-ni/libvisa-22.5.0
 >=sci-ni/ni_euladepot-22.5.0
-sys-libs/glibc
+sys-devel/gcc:12
+sys-libs/glibc:2.2
 "

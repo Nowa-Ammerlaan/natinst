@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-VISA instrument driver runtime library (common files)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/libvisa-data-22.5.0.49215-0+f63.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/libvisa-data-22.5.0.49215-0+f63.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

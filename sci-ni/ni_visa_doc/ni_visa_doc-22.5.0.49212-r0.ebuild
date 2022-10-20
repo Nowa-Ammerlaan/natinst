@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-VISA Documentation"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/ni-visa-doc-22.5.0.49212-0+f60.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-visa-doc-22.5.0.49212-0+f60.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

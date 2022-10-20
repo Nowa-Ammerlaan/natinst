@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-XNET LabVIEW API Library"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/libnixnet-labview-22.5.0.49206-0+f54.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/libnixnet-labview-22.5.0.49206-0+f54.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,8 +19,7 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-app-shells/bash
-sys-libs/glibc
 >=sci-ni/libnixnet-22.5.0
-sys-libs/glibc
+sys-devel/gcc:12
+sys-libs/glibc:2.2
 "

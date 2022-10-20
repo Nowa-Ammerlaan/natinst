@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-SCOPE mx Device Driver"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/ni-scope-daqmx-dkms-22.5.0.49218-0+f66.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-scope-daqmx-dkms-22.5.0.49218-0+f66.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-app-shells/bash
 >=sci-ni/ni_daqmx_nidmxf_dkms-22.5.0
 >=sci-ni/ni_dim_dkms-22.5.0
 >=sci-ni/ni_kal-22.5.0

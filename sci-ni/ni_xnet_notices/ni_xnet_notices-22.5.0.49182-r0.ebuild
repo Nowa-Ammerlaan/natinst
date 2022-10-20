@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-XNET Legal Notices"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q3/rpm/ni/el8/ni-xnet-notices-22.5.0.49182-0+f30.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-xnet-notices-22.5.0.49182-0+f30.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
