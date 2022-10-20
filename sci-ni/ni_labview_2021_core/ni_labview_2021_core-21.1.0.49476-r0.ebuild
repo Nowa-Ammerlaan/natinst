@@ -19,7 +19,7 @@ RESTRICT="bindist mirror fetch"
 
 RDEPEND="
 app-arch/rpm
->=sci-ni/labview_2021_exe-21.1.0
+>=sci-ni/labview_2021_exe_libs-21.1.0
 >=sci-ni/labview_2021_rte-21.1.0
 >=sci-ni/ni_service_locator-21.0.0
 "

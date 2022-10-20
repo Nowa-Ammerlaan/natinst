@@ -21,7 +21,7 @@ RDEPEND="
 app-arch/rpm
 sci-ni/labview_2020_rte
 ~sci-ni/niexfinder_base-1.0
->=sci-ni/nisyscfgi-
+sci-ni/nisyscfgi
 "
 
 pkg_nofetch() {
