@@ -2,7 +2,7 @@
 # For this script we need
 # - net-misc/wget
 # - app-arch/rpm
-# - app-portage/gentoolkit
+# - app-portage/portage-utils
 # - app-portage/eix
 # - sys-apps/portage
 # - dev-util/pkgcheck
@@ -62,7 +62,7 @@ for rpm in ${list_rpms}; do
 		elif [[ ${dep} == *".so"* ]]; then
 			# This is a library, find the package it belongs to
 			printf "   Found library dependency, checking which package it belongs to\n"
-			match=$(equery b -en ${dep%%(*})
+			match=$(qfile -qS  ${dep%%(*} | uniq)
 			if [ -n "${match}" ]; then
 				printf "      Found matching package ${match} for dependency ${dep}\n"
 				ebuild_deps+="${match}\n"
@@ -72,7 +72,7 @@ for rpm in ${list_rpms}; do
 		elif [[ ${dep} == "/"* ]]; then
 			# This is a path, find the package it belongs to
 			printf "   Found path dependency, checking which package it belongs to\n"
-			match=$(equery b -en ${dep%%(*})
+			match=$(qfile -qS ${dep%%(*} | uniq)
 			if [ -n "${match}" ]; then
 				printf "      Found matching package ${match} for dependency ${dep}\n"
 				ebuild_deps+="${match}\n"
