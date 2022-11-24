@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="Provides NI JSON Map Files"
-HOMEPAGE="https://www.ni.com/linux/"
-SRC_URI="nijsonmapi-21.0.0.49152-0+f0.noarch.rpm"
+DESCRIPTION="LabVIEW Executables - Libraries"
+HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
+SRC_URI="labview-2022-exe-libs-22.3.1.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

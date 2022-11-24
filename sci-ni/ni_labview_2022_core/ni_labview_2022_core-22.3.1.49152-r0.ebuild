@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="Provides NI JSON Map Files"
-HOMEPAGE="https://www.ni.com/linux/"
-SRC_URI="nijsonmapi-21.0.0.49152-0+f0.noarch.rpm"
+DESCRIPTION="LabVIEW Application and VI Library"
+HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
+SRC_URI="ni-labview-2022-core-22.3.1.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,6 +19,10 @@ RESTRICT="bindist mirror fetch"
 
 RDEPEND="
 app-arch/rpm
+>=sci-ni/labview_2022_exe_libs-22.3.1
+>=sci-ni/labview_2022_rte-22.3.1
+>=sci-ni/ni_help_launcher-22.5.0
+>=sci-ni/ni_service_locator-22.3.0
 "
 
 pkg_nofetch() {

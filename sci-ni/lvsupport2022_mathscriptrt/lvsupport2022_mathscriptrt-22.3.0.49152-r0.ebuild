@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="Provides NI JSON Map Files"
-HOMEPAGE="https://www.ni.com/linux/"
-SRC_URI="nijsonmapi-21.0.0.49152-0+f0.noarch.rpm"
+DESCRIPTION="MathScript RT Module 2022 for Linux 64-bit Installer"
+HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
+SRC_URI="lvsupport2022-mathscriptrt-22.3.0.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,6 +19,7 @@ RESTRICT="bindist mirror fetch"
 
 RDEPEND="
 app-arch/rpm
+>=sci-ni/ni_labview_2022_core-22.3.0
 "
 
 pkg_nofetch() {
