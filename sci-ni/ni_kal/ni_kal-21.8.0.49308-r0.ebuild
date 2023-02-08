@@ -21,7 +21,6 @@ KERNEL_MAX="5.16"
 
 RDEPEND="
 app-arch/rpm
-app-shells/bash
 >=app-shells/bash-4.1
 sys-devel/binutils
 sys-devel/gcc
@@ -31,7 +30,6 @@ sys-kernel/dkms
 	<sys-kernel/gentoo-sources-${KERNEL_MAX}
 	<sys-kernel/vanilla-sources-${KERNEL_MAX}
 	<sys-kernel/rt-sources-${KERNEL_MAX}
-	<sys-kernel/zen-sources-${KERNEL_MAX}
 	<sys-kernel/gentoo-kernel-${KERNEL_MAX}
 	<sys-kernel/gentoo-kernel-bin-${KERNEL_MAX}
 )

@@ -18,16 +18,12 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-accessibility/at-spi2-atk
-app-accessibility/at-spi2-core
+app-accessibility/at-spi2-core:2
 app-arch/rpm
-app-text/zotero-bin
-dev-libs/atk
 dev-libs/expat
 dev-libs/glib
 media-libs/alsa-lib
 media-libs/mesa
-media-video/popcorntime-bin
 net-print/cups
 sys-apps/dbus
 sys-devel/gcc

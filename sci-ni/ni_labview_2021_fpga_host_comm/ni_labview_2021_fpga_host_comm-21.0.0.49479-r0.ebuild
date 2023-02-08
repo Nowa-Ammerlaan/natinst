@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-ebuilds.sh
@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="lvfpga_host_comm_linux_installer"
 HOMEPAGE="https://www.ni.com/linux/"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-labview-2021-fpga-host-comm-21.0.0.49479-0+f327.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q1/rpm/ni/el9/ni-labview-2021-fpga-host-comm-21.0.0.49479-0+f327.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

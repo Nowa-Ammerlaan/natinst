@@ -20,7 +20,7 @@ RESTRICT="bindist mirror fetch"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
->=sci-ni/labview_2023_exe-23.1.0
+>=sci-ni/labview_2023_exe_libs-23.1.0
 >=sci-ni/labview_2023_rte-23.1.0
 >=sci-ni/ni_ceip-23.0.0
 >=sci-ni/ni_help_launcher-23.0.0
