@@ -19,6 +19,7 @@ CONFIG_CHECK="~MODULES"
 
 RDEPEND="
 	sys-apps/kmod
+	virtual/linux-sources
 	systemd? ( sys-apps/systemd )
 "
 
