@@ -17,16 +17,10 @@ SLOT="0"
 
 RESTRICT="bindist mirror fetch"
 
-KERNEL_MAX="5"
-
 RDEPEND="
 app-arch/rpm
 app-shells/bash
-|| (
-	<sys-kernel/gentoo-sources-${KERNEL_MAX}
-	<sys-kernel/vanilla-sources-${KERNEL_MAX}
-	<sys-kernel/rt-sources-${KERNEL_MAX}
-)
+virtual/linux-sources
 "
 
 pkg_nofetch() {
