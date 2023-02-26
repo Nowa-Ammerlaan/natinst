@@ -17,8 +17,6 @@ SLOT="0"
 
 RESTRICT="bindist mirror"
 
-KERNEL_MAX="5.5"
-
 RDEPEND="
 app-arch/rpm
 app-shells/bash
@@ -26,11 +24,5 @@ sys-devel/binutils
 sys-devel/gcc
 sys-devel/make
 sys-kernel/dkms
-|| (
-	<sys-kernel/gentoo-sources-${KERNEL_MAX}
-	<sys-kernel/vanilla-sources-${KERNEL_MAX}
-	<sys-kernel/rt-sources-${KERNEL_MAX}
-	<sys-kernel/gentoo-kernel-${KERNEL_MAX}
-	<sys-kernel/gentoo-kernel-bin-${KERNEL_MAX}
-)
+virtual/linux-sources
 "
