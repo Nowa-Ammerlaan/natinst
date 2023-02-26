@@ -22,7 +22,7 @@ RDEPEND="
 "
 
 distutils_enable_tests pytest
-distutils_enable_sphinx docs/source dev-python/sphinx_rtd_theme
+distutils_enable_sphinx docs/source dev-python/sphinx-rtd-theme
 
 python_prepare_all() {
 	# correct testpaths

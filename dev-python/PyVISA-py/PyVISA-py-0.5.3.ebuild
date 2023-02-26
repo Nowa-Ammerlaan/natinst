@@ -23,7 +23,7 @@ RDEPEND="
 BDEPEND="test? ( dev-python/PyVISA-sim[${PYTHON_USEDEP}] )"
 
 distutils_enable_tests pytest
-distutils_enable_sphinx docs/source dev-python/sphinx_rtd_theme
+distutils_enable_sphinx docs/source dev-python/sphinx-rtd-theme
 
 pkg_postinst() {
 	optfeature "interfacing with Serial instruments" dev-python/pyserial

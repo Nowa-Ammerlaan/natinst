@@ -26,7 +26,7 @@ BDEPEND="test? (
 )"
 
 distutils_enable_tests pytest
-distutils_enable_sphinx docs/source dev-python/sphinx_rtd_theme
+distutils_enable_sphinx docs/source dev-python/sphinx-rtd-theme
 
 pkg_postinst() {
 	elog "You'll need a VISA driver to use this package, either the proprietary sci-ni/ni_visa from National Instruments or the open-source pure python implementation dev-python/PyVISA-py"
