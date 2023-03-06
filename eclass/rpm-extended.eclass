@@ -52,7 +52,7 @@ QA_PREBUILT="*"
 # script from  the rpm file, since this is not guaranteed to exist for binpkgs
 RESTRICT="bindist"
 
-# @ECLASS-VARIABLE: RPM_SCRIPT_RUNNER
+# @ECLASS_VARIABLE: RPM_SCRIPT_RUNNER
 # @DESCRIPTION:
 # Set which shell should run the rpm pre/post(un)install scripts. Defaults to
 # bash, can include extra arguments.
