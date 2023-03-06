@@ -37,7 +37,7 @@ BDEPEND="${RDEPEND}"
 
 PATCHES=( "${FILESDIR}/${PN}-fix-make-install.patch" )
 
-distutils_enable_sphinx docs dev-python/sphinx_rtd_theme
+distutils_enable_sphinx docs dev-python/sphinx-rtd-theme
 
 src_unpack() {
 	unpack "${P}.tar.bz2"
