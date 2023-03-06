@@ -110,6 +110,7 @@ Though it is possible to use `app-arch/rpm` directly to install rpm software, th
 - Gentoo's portage can track the installed files and manage conflicts.
 - Dependencies on software outside of the rpm repository are resolved.
 - There is no risk of accidentally overwriting main system files.
+
 That being said, generating these ebuilds requires reading the metadata from the rpm files, "translating" this metadata to Gentoo sometimes requires guessing.
 Though the dependencies within each category of generated ebuilds is highly likely to be consistent and correct, there might be dependencies missing or incorrect where the software depends on software outside of the upstream rpm repository.
 As a result, software installed through this repository might not immediately work and manually installing additional packages might be required.
