@@ -1,4 +1,4 @@
-# VISA, DAQ and NatInst ebuild repository
+# VISA, DAQ, NI LabVIEW, PicoScope and oneAPI ebuild repository
 [![pkgcheck](https://github.com/AndrewAmmerlaan/natinst/workflows/pkgcheck/badge.svg)](https://github.com/AndrewAmmerlaan/natinst/actions?query=workflow%3Apkgcheck)
 
 This ebuild repository contains ebuilds for:
