@@ -21,7 +21,6 @@ RDEPEND="
 app-arch/rpm
 app-shells/bash
 dev-lang/perl
-dev-libs/atk
 dev-libs/glib
 dev-libs/libxml2
 media-libs/fontconfig
