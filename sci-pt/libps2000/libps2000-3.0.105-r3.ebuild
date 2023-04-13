@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="Intel Integrated Performance Primitives exports for Pico Technology Products."
-HOMEPAGE="https://www.picotech.com/"
-SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libpicoipp-1.4.0-4r157.x86_64.rpm"
+DESCRIPTION="PicoScope 2000 Linux driver"
+HOMEPAGE="https://www.picotech.com"
+SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libps2000-3.0.105-3r3345.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -20,4 +20,8 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
+app-shells/bash
+dev-libs/libusb
+sys-devel/gcc
+sys-libs/glibc
 "

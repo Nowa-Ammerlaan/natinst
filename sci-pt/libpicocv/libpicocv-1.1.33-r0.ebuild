@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="Intel Integrated Performance Primitives exports for Pico Technology Products."
+DESCRIPTION="OpenCV exports and symbols for Pico Technology Products."
 HOMEPAGE="https://www.picotech.com/"
-SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libpicoipp-1.4.0-4r157.x86_64.rpm"
+SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libpicocv-1.1.33-beta2r167.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -20,4 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
+sys-devel/gcc
+sys-libs/glibc
 "
