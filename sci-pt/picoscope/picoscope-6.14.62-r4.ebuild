@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="PicoScope GTK"
 HOMEPAGE="https://www.picotech.com"
-SRC_URI="https://labs.picotech.com/rpm/noarch/picoscope-6.14.23-4r580.noarch.rpm"
+SRC_URI="https://labs.picotech.com/rpm/noarch/picoscope-6.14.62-4r6250.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -20,20 +20,20 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
->=sci-pt/libpicoipp-1.1.1-r1
-=sci-pt/libpicoipp-1.3.0-r4
-=sci-pt/libpl1000-2.0.40-r1
-=sci-pt/libps2000-3.0.40-r3
-=sci-pt/libps2000a-2.1.40-r5
-=sci-pt/libps3000-4.0.40-r3
-=sci-pt/libps3000a-2.1.40-r6
-=sci-pt/libps4000-2.1.40-r2
-=sci-pt/libps4000a-2.1.40-r2
-=sci-pt/libps5000-2.1.40-r3
-=sci-pt/libps5000a-2.1.40-r5
-=sci-pt/libps6000-2.1.40-r6
-~sci-pt/libps6000a-1.0.40
-=sci-pt/libusbdrdaq-2.0.40-r1
+app-shells/bash
+=sci-pt/libpicoipp-1.4.0-r4
+=sci-pt/libpl1000-2.0.83-r1
+=sci-pt/libps2000-3.0.83-r3
+=sci-pt/libps2000a-2.1.83-r5
+=sci-pt/libps3000-4.0.83-r3
+=sci-pt/libps3000a-2.1.83-r6
+=sci-pt/libps4000-2.1.83-r2
+=sci-pt/libps4000a-2.1.83-r2
+=sci-pt/libps5000-2.1.83-r3
+=sci-pt/libps5000a-2.1.83-r5
+=sci-pt/libps6000-2.1.83-r6
+~sci-pt/libps6000a-1.0.83
+=sci-pt/libusbdrdaq-2.0.83-r1
 >=sci-pt/picomono-4.6.2.16-r1
 "
 

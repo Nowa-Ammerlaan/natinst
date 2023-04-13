@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # This ebuild was generated with ../update-ebuilds.sh
@@ -18,8 +18,8 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+app-alternatives/sh
 app-arch/rpm
-app-shells/bash
 >=sci-pt/libpicoipp-1.1.1-r1
 =sci-pt/libpicoipp-1.3.0-r4
 =sci-pt/libpl1000-2.0.61-r1
@@ -34,7 +34,7 @@ app-shells/bash
 =sci-pt/libps6000-2.1.61-r6
 ~sci-pt/libps6000a-1.0.61
 =sci-pt/libusbdrdaq-2.0.61-r1
-sci-pt/picomono
+>=sci-pt/picomono-4.6.2.16-r1
 "
 
 src_prepare() {
