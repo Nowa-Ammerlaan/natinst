@@ -44,12 +44,11 @@ dkms autoinstall
 If you encounter any issues building the drivers for your kernel, re-try with the preceeding LTS kernel release, e.g.:
 
 ```
-emerge gentoo-sources:5.15.59
-dkms autoinstall -k 5.15.59-gentoo
+emerge gentoo-sources:6.1.X
+dkms autoinstall -k 6.1.X-gentoo
 ```
 
-At the time of writing the latest kernel version compatible with the NI Kernel Abstraction Layer (nikal) is 5.15.
-That being said, it can be made to work with later kernel releases with some small patches (not included here).
+At the time of writing the latest kernel version compatible with the NI Kernel Abstraction Layer (nikal) is 6.2.
 
 Now reboot to the kernel you built the modules for, and start the relevant service with:
 
