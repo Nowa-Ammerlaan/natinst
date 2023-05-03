@@ -22,7 +22,7 @@ RESTRICT="test"
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
-	dev-python/importlib_metadata[${PYTHON_USEDEP}]
+	dev-python/importlib-metadata[${PYTHON_USEDEP}]
 	sci-ni/ni_daqmx
 "
 
