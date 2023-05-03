@@ -33,4 +33,5 @@ sys-libs/glibc
 sys-libs/ncurses
 x11-libs/libX11
 x11-libs/libXext
+virtual/wine
 "

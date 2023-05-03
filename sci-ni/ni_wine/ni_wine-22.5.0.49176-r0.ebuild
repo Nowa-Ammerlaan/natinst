@@ -19,7 +19,7 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-app-emulation/wine-staging
+virtual/wine
 dev-haskell/zlib
 media-libs/fontconfig
 media-libs/freetype

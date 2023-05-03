@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI I/O Trace Debugging Tool"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q1/rpm/ni/el9/ni-iotrace-23.0.0.49283-0+f131.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-iotrace-23.0.0.49283-0+f131.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

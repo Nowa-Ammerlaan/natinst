@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-SWITCH mx Device Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q1/rpm/ni/el9/ni-switch-daqmx-23.0.0.49326-0+f174.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-switch-daqmx-23.0.0.49326-0+f174.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

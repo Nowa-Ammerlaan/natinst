@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-488.2 Configuration Utilities for Linux (metapackage)"
 HOMEPAGE="https://www.ni.com/linux/"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q1/rpm/ni/el9/ni-488.2-utils-22.8.0.49268-0+f116.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-488.2-utils-22.8.0.49268-0+f116.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

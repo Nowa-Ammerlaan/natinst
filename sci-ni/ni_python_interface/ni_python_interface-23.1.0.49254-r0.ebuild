@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="LabVIEW Python Interface support"
 HOMEPAGE="https://www.ni.com/linux"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q1/rpm/ni/el9/ni-python-interface-23.1.0.49254-0+f102.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-python-interface-23.1.0.49254-0+f102.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

@@ -8,8 +8,8 @@ EAPI=8
 inherit rpm-extended
 
 DESCRIPTION="NI Xerces XML parsing library"
-HOMEPAGE="https://download.ni.com/ni-linux-desktop/2023/Q1/rpm/ni/el9/"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q1/rpm/ni/el9/nixercesdelayloadi-2.7.10.49152-0+f0.i386.rpm"
+HOMEPAGE="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/nixercesdelayloadi-2.7.10.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

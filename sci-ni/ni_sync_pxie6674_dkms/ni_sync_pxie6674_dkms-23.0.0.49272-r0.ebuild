@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI timing and synchronization driver for NI PXIe-6674T"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q1/rpm/ni/el9/ni-sync-pxie6674-dkms-23.0.0.49272-0+f120.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-sync-pxie6674-dkms-23.0.0.49272-0+f120.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
