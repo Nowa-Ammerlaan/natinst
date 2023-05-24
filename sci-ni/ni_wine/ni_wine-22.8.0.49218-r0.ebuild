@@ -21,7 +21,7 @@ RDEPEND="
 app-alternatives/sh
 app-arch/rpm
 virtual/wine
-dev-haskell/zlib
+sys-libs/zlib
 media-libs/fontconfig
 media-libs/freetype
 media-libs/libpulse

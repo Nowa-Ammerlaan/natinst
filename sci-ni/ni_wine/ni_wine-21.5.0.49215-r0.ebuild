@@ -19,7 +19,7 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-dev-haskell/zlib
+sys-libs/zlib
 dev-libs/libxml2
 media-libs/fontconfig
 media-libs/freetype
