@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 DOCS_BUILDER="doxygen"
 DOCS_DIR="doc"
 
-inherit distutils-r1 docs udev
+inherit distutils-r1 docs pypi udev
 
 DESCRIPTION="MCC Universal Library for Linux"
 HOMEPAGE="
@@ -18,7 +18,7 @@ HOMEPAGE="
 "
 SRC_URI="
 	https://github.com/mccdaq/uldaq/releases/download/v${PV}/lib${P}.tar.bz2 -> ${P}.tar.bz2
-	python? ( mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz -> ${P}-python.tar.gz )
+	python? ( $(pypi_sdist_url ${PN} ${PV}) -> ${P}-python.tar.gz )
 "
 S="${WORKDIR}/lib${P}"
 
