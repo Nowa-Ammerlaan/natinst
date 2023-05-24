@@ -5,11 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 optfeature
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 optfeature pypi
 
 DESCRIPTION="Python VISA bindings for GPIB, RS232, and USB instruments"
 HOMEPAGE="https://pyvisa-py.readthedocs.io"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
