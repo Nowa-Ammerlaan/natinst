@@ -13,11 +13,22 @@ if ! command -v rpm &> /dev/null; then
     exit
 fi
 
-# Sub-dir where the rpm files are at, this should be the only thing you have to edit
-rpm_location="fetch-restrict/"
+# Location on the internet of the rpm files, without https, this should be the only thing you have to edit
+rpm_location=""
 distdir="$(portageq distdir)"
 
-list_rpms="$(ls -1 ${rpm_location}*.rpm)"
+printf "Downloading rpms from https://${rpm_location}\n"
+
+mkdir -p "temp_downloads"
+pushd "temp_downloads" > /dev/null # make it silent
+
+wget -nc "https://${rpm_location}SHA256SUMS"
+list_rpms=$(cat "SHA256SUMS" | sed -n -e 's/^.*.\///p')
+for rpm in ${list_rpms}; do
+	wget -nc "https://${rpm_location}${rpm}"
+done
+
+popd  > /dev/null # make it silent
 
 for rpm in ${list_rpms}; do
 	printf "\nFound ${rpm}\n"
@@ -25,15 +36,15 @@ for rpm in ${list_rpms}; do
 	# clear variables before we start
 	unset name version revision description homepage dependencies
 
-	name=$(rpm -q "${rpm}" --qf "%{NAME}\n")
-	version=$(rpm -q "${rpm}" --qf "%{VERSION}\n")
-	revision=$(rpm -q "${rpm}" --qf "%{RELEASE}\n" | sed 's/[^0123456789].*//')
+	name=$(rpm -q "temp_downloads/${rpm}" --qf "%{NAME}\n")
+	version=$(rpm -q "temp_downloads/${rpm}" --qf "%{VERSION}\n")
+	revision=$(rpm -q "temp_downloads/${rpm}" --qf "%{RELEASE}\n" | sed 's/[^0123456789].*//')
 	if [ -z "${revision}" ]; then
 		# revision is empty, set to 0
 		revision="0"
 	fi
-	description=$(rpm -q "${rpm}" --qf "%{SUMMARY}\n")
-	homepage=$(rpm -q "${rpm}" --qf "%{URL}\n" )
+	description=$(rpm -q "temp_downloads/${rpm}" --qf "%{SUMMARY}\n")
+	homepage=$(rpm -q "temp_downloads/${rpm}" --qf "%{URL}\n" )
 	if [[ "${homepage}" == "(none)" ]]; then
 		# url is empty, set a sensible default
 		homepage="https://${rpm_location}"
@@ -42,7 +53,7 @@ for rpm in ${list_rpms}; do
 	homepage="${homepage%%>*}"
 	homepage="${homepage##*<}"
 	homepage="${homepage//http:/https:}"
-	dependencies=$(rpm -qR "${rpm}")
+	dependencies=$(rpm -qR "temp_downloads/${rpm}")
 
 	# Process dependencies
 	ebuild_deps=""
@@ -195,7 +206,7 @@ EOF
 
 	# No need to download everything twice
 	printf "\nMoving ${rpm} to ${distdir}\n"
-	mv "../${rpm}" "${distdir}"
+	mv "../temp_downloads/${rpm}" "${distdir}"
 
 	# Generate manifest file
 	printf "\nGenerating Manifest files\n"
@@ -205,6 +216,6 @@ EOF
 done
 
 # Clean up download directory
-rm -r "${rpm_location%%/*}"
+rm -r "temp_downloads"
 
 printf "DONE: Do a manual check with \'pkgcheck scan\' to ensure everything is correct\n"
