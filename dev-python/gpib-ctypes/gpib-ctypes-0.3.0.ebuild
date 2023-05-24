@@ -4,14 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
-inherit distutils-r1
-
-MY_PN="gpib_ctypes"
+PYPI_PN="gpib_ctypes"
+inherit distutils-r1 pypi
 
 DESCRIPTION="Cross-platform Python bindings for the NI GPIB and linux-gpib C interfaces"
 HOMEPAGE="https://github.com/tivek/gpib_ctypes"
-SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_PN}-${PV}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
+S="${WORKDIR}/${PYPI_PN}-${PV}"
 
 LICENSE="GPL-2"
 SLOT="0"
