@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="PicoScope driver"
-HOMEPAGE="https://www.picotech.com"
-SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libseafire-1.0.81-0r3207.x86_64.rpm"
+DESCRIPTION="OpenCV exports and symbols for Pico Technology Products."
+HOMEPAGE="https://www.picotech.com/"
+SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libpicocv-1.1.34-beta2r172.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -20,9 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-app-shells/bash
-dev-libs/libusb
 sys-devel/gcc
 sys-libs/glibc
-sys-libs/zlib
 "

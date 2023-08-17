@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="PicoScope driver"
+DESCRIPTION="PicoScope 3000 Linux driver"
 HOMEPAGE="https://www.picotech.com"
-SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libseafire-1.0.81-0r3207.x86_64.rpm"
+SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libps3000-4.0.113-3r3501.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -24,5 +24,4 @@ app-shells/bash
 dev-libs/libusb
 sys-devel/gcc
 sys-libs/glibc
-sys-libs/zlib
 "

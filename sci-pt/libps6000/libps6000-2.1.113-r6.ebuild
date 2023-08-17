@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="PicoScope driver"
+DESCRIPTION="PicoScope 6000 series Linux driver"
 HOMEPAGE="https://www.picotech.com"
-SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libseafire-1.0.81-0r3207.x86_64.rpm"
+SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libps6000-2.1.113-6r3501.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
