@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Infrastructure package for NI software"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-timesync-nisyncloc-23.0.0.49276-0+f124.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-timesync-nisyncloc-23.0.0.49276-0+f124.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,6 +19,7 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
+sci-mathematics/mathematica
 >=sci-ni/ni_euladepot-23.0.0
 sys-devel/gcc
 sys-libs/glibc

@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI ICP Legal Notices"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-icp-notices-22.5.0.49164-0+f12.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-icp-notices-22.5.0.49164-0+f12.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

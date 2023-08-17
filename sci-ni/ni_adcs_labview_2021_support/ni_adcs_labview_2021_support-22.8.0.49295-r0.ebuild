@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Automotive Diagnostic Command Set support for LabVIEW 2021 (64-bit)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-adcs-labview-2021-support-22.8.0.49295-0+f143.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-adcs-labview-2021-support-22.8.0.49295-0+f143.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

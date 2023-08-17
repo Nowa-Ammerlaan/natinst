@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Provides NI-XNET hardware support for ECU Measurement and Calibration Toolkit (metapackage)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-ecumc-xnet-support-22.8.0.49295-0+f143.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-ecumc-xnet-support-22.8.0.49295-0+f143.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

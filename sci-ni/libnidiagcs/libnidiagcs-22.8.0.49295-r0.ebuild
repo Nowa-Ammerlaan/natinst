@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Runtime libraries for the Automotive Diagnostic Command Set C API"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/libnidiagcs-22.8.0.49295-0+f143.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/libnidiagcs-22.8.0.49295-0+f143.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -20,6 +20,7 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
+sci-mathematics/mathematica
 >=sci-ni/labview_2021_rte-21.1.1
 >=sci-ni/ni_adcs_errors-22.8.0
 >=sci-ni/ni_adcs_libs-22.8.0

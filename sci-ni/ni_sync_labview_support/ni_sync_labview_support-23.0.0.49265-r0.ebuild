@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-Sync LabVIEW Development Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-sync-labview-support-23.0.0.49265-0+f113.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-sync-labview-support-23.0.0.49265-0+f113.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

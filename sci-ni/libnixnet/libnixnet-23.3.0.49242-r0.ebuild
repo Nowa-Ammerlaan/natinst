@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-XNET API library"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/libnixnet-23.3.0.49242-0+f90.el9.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/libnixnet-23.3.0.49242-0+f90.el9.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -20,6 +20,7 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
+sci-mathematics/mathematica
 >=sci-ni/libniapxipm215-23.3.0
 >=sci-ni/libniqpxi1-23.3.0
 >=sci-ni/libnixnet_bin-23.3.0

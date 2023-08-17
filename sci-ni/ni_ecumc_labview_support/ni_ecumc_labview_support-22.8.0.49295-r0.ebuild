@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-ECUMC LabVIEW Development Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-ecumc-labview-support-22.8.0.49295-0+f143.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-ecumc-labview-support-22.8.0.49295-0+f143.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -27,5 +27,4 @@ app-arch/rpm
 >=sci-ni/ni_ecumc_example_finder_support-22.8.0
 >=sci-ni/ni_ecumc_notices-22.8.0
 >=sci-ni/ni_ecumc_xnet_support-22.8.0
-sci-ni/ni_labview_2022_core
 "

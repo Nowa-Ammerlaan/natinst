@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI 843x Device Libraries"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-843x-libs-23.3.0.49275-0+f123.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-843x-libs-23.3.0.49275-0+f123.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -19,6 +19,7 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
+sci-mathematics/mathematica
 >=sci-ni/libniapxipm215-23.3.0
 >=sci-ni/libniqpxi1-23.3.0
 >=sci-ni/ni_843x_dkms-23.3.0

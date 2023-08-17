@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI routing adapter library for NI PXIe-6674T"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-sync-pxie6674-hwsupport-23.0.0.49272-0+f120.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-sync-pxie6674-hwsupport-23.0.0.49272-0+f120.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -20,6 +20,7 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
+sci-mathematics/mathematica
 >=sci-ni/libniapxipm215-23.0.0
 >=sci-ni/ni_euladepot-23.0.0
 >=sci-ni/ni_sync_pxie6674_dkms-23.0.0
