@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/labview_2021_rte-21.1.1
 >=sci-ni/ni_adcs_errors-22.8.0
 >=sci-ni/ni_adcs_example_databases-22.8.0

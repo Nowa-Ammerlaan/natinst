@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 sci-ni/libnidimu1
 >=sci-ni/ni_daqmx_notices-23.5.0
 sci-ni/ni_mdbg

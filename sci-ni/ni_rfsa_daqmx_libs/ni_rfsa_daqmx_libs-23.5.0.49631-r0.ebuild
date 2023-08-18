@@ -22,7 +22,6 @@ app-alternatives/sh
 app-arch/rpm
 dev-cpp/tbb
 dev-util/intel-ocl-sdk
-sci-mathematics/mathematica
 >=sci-ni/labview_2021_rte-21.1.2
 >=sci-ni/libniapxipm215-23.5.0
 sci-ni/libnidimu1

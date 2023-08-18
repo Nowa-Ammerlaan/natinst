@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/libniapxipm215-23.3.0
 >=sci-ni/libniqpxi1-23.3.0
 >=sci-ni/libnixnet_bin-23.3.0

@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/labview_2023_rte-23.3.0
 >=sci-ni/ni_5164_dkms-23.5.0
 >=sci-ni/ni_bds-23.5.0

@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/ni_syscfg_runtime-23.3.0
 >=sci-ni/ni_xnet_notices-23.3.0
 sys-devel/gcc

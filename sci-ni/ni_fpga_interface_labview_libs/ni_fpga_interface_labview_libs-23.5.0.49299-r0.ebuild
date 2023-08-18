@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/ni_fpga_interface-23.5.0
 sys-devel/gcc
 sys-libs/glibc

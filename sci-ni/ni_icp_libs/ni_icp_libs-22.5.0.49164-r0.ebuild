@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/ni_icp_errors-22.5.0
 >=sci-ni/ni_icp_notices-22.5.0
 sys-devel/gcc

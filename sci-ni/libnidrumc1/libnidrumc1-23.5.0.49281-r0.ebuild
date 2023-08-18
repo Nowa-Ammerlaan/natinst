@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/libnidrumc1_bin-23.5.0
 >=sci-ni/libusb_ni1-20.0.0
 sys-devel/gcc

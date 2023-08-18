@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/labview_2022_rte-22.3.1
 >=sci-ni/libnixnet_labview-23.3.0
 sys-devel/gcc

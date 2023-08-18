@@ -21,7 +21,6 @@ RDEPEND="
 app-alternatives/sh
 app-arch/rpm
 app-shells/bash
-sci-mathematics/mathematica
 >=sci-ni/labview_2021_rte-21.1.1
 >=sci-ni/libniemcc_labview-22.8.0
 >=sci-ni/ni_ecumc_notices-22.8.0

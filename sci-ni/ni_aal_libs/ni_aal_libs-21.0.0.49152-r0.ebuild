@@ -19,6 +19,5 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 sys-devel/gcc
 "

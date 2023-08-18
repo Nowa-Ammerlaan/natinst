@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/ni_switch_daqmx-23.5.0
 sys-devel/gcc
 sys-libs/glibc

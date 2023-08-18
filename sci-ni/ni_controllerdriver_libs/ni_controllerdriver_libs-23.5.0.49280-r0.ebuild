@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/libnicntdrv1-23.5.0
 >=sci-ni/ni_apal_errors-23.5.0
 >=sci-ni/ni_controllerdriver_errors-23.5.0

@@ -21,7 +21,6 @@ RDEPEND="
 app-arch/rpm
 app-arch/zip
 >=app-shells/bash-4.1.0
-sci-mathematics/mathematica
 >=sci-ni/ni_euladepot-23.5.0
 sys-devel/gcc
 sys-libs/glibc

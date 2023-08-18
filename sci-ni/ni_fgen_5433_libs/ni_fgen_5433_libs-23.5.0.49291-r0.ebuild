@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/labview_2022_rte-22.3.1
 >=sci-ni/libniapxipm215-23.5.0
 >=sci-ni/libniqpxi1-23.5.0

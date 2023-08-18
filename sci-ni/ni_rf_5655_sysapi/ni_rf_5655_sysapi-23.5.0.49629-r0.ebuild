@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 sci-ni/ni_mdbg
 sci-ni/ni_mxdf
 >=sci-ni/ni_sysapi-23.5.0

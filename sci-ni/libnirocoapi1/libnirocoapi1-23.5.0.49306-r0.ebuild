@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/ni_apal_errors-23.5.0
 >=sci-ni/ni_routing_errors-23.5.0
 >=sci-ni/ni_service_locator-23.3.0

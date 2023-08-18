@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/ni_flexrio_errors-23.5.0
 >=sci-ni/ni_fpga_interface-23.5.0
 >=sci-ni/ni_rio-23.5.0

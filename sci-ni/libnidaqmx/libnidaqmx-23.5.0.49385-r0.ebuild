@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/ni_daqmx_dsa-23.5.0
 >=sci-ni/ni_daqmx_ef-23.5.0
 >=sci-ni/ni_daqmx_errors-23.5.0

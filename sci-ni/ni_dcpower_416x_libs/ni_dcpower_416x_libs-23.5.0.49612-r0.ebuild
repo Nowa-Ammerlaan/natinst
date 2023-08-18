@@ -20,7 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/ni_dcpower_4118_dkms-23.5.0
 >=sci-ni/ni_dcpower_4147_dkms-23.5.0
 >=sci-ni/ni_dcpower_416x_dkms-23.5.0

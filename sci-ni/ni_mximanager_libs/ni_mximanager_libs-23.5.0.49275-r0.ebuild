@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/libnicpcie1-23.5.0
 >=sci-ni/libnimximgr1-23.5.0
 >=sci-ni/libnimximgr1_errors-23.5.0

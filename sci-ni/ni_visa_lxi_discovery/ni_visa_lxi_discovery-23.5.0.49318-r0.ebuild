@@ -21,7 +21,6 @@ RDEPEND="
 app-alternatives/sh
 app-arch/rpm
 net-dns/avahi
-sci-mathematics/mathematica
 sci-ni/libvisa
 >=sci-ni/libvisa-23.5.0
 sci-ni/ni_avahi_client

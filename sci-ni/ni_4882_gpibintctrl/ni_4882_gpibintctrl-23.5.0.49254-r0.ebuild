@@ -19,7 +19,6 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-sci-mathematics/mathematica
 >=sci-ni/libni4882-23.5.0
 >=sci-ni/ni_4882_documentation-23.5.0
 sys-devel/gcc
