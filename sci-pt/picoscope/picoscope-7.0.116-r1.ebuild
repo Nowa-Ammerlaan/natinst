@@ -40,13 +40,6 @@ media-fonts/roboto
 ~sci-pt/libps6000a-1.0.105
 ~sci-pt/libseafire-1.0.81
 >=x11-misc/wmctrl-1.07
->=sci-pt/picomono-4.6.2.16-r1
+dev-lang/mono
+>=dev-dotnet/gtk-sharp-3
 "
-
-src_prepare() {
-	default
-	# Adjust launch script to launch with picomono
-	sed -i -e \
-		's/MONO_CMD=$(which mono 2>\/dev\/null)/MONO_CMD=\/opt\/picomono\/bin\/mono/g' \
-		opt/picoscope/bin/picoscope || die
-}
