@@ -7,9 +7,9 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION="Intel Integrated Performance Primitives exports for Pico Technology Products."
-HOMEPAGE="https://www.picotech.com/"
-SRC_URI="https://labs.picotech.com/rc/picoscope7/rpm/x86_64/libpicoipp-1.4.0-4r161.x86_64.rpm"
+DESCRIPTION="Pico Technology PicoLog CM3 Current Data Logger driver"
+HOMEPAGE="https://www.picotech.com"
+SRC_URI="https://labs.picotech.com/rc/picoscope7/rpm/x86_64/libplcm3-2.0.120-1r5257.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
@@ -20,4 +20,8 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
+app-shells/bash
+dev-libs/libusb
+sys-devel/gcc
+sys-libs/glibc
 "
