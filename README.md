@@ -48,7 +48,7 @@ emerge gentoo-sources:6.1.X
 dkms autoinstall -k 6.1.X-gentoo
 ```
 
-At the time of writing the latest kernel version compatible with the NI Kernel Abstraction Layer (nikal) is 6.2.
+At the time of writing the latest kernel version compatible with the NI Kernel Abstraction Layer (nikal) is 6.4.
 
 Now reboot to the kernel you built the modules for, and start the relevant service with:
 
