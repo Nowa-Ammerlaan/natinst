@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="host_comm_lvfpga_addoni_linux"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-labview-fpga-module-host-comm-23.1.0.49241-0+f89.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q4/rpm/ni/el9/ni-labview-fpga-module-host-comm-23.1.0.49241-0+f89.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

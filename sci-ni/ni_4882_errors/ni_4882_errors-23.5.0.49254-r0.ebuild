@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-488.2 error descriptions package"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-488.2-errors-23.5.0.49254-0+f102.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q4/rpm/ni/el9/ni-488.2-errors-23.5.0.49254-0+f102.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

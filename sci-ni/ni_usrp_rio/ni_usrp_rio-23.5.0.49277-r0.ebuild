@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI USRP RIO Linux Support (metapackage)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q3/rpm/ni/el9/ni-usrp-rio-23.5.0.49277-0+f125.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q4/rpm/ni/el9/ni-usrp-rio-23.5.0.49277-0+f125.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
