@@ -20,14 +20,13 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-alternatives/sh
 app-arch/rpm
-app-emulation/wine-staging
-dev-haskell/zlib
+virtual/wine
+sys-libs/zlib
 media-libs/fontconfig
 media-libs/freetype
 media-libs/libpulse
 net-libs/libpcap
 >=sci-ni/ni_euladepot-23.8.0
-sci-ni/ni_wine
 sys-devel/gcc
 sys-libs/glibc
 sys-libs/ncurses
