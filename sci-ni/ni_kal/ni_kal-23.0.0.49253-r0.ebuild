@@ -22,7 +22,7 @@ app-arch/rpm
 >=app-shells/bash-4.1
 sys-devel/binutils
 sys-devel/gcc
-sys-devel/make
+dev-build/make
 sys-kernel/dkms
 virtual/linux-sources
 "

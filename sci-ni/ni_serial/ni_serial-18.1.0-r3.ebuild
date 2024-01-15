@@ -20,6 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="
 app-arch/rpm
 app-shells/bash
-sys-devel/make
+dev-build/make
 sys-kernel/dkms
 "

@@ -24,7 +24,7 @@ app-shells/bash
 sys-apps/grep
 >=sys-devel/binutils-2.24
 >=sys-devel/gcc-4.7
->=sys-devel/make-4.0
+>=dev-build/make-4.0
 sys-kernel/dkms
 virtual/linux-sources
 "
