@@ -14,7 +14,7 @@ S="${WORKDIR}/${PN}-python-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-python/pythonnet[${PYTHON_USEDEP}]
