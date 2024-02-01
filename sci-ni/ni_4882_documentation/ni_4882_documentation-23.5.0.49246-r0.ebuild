@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-488.2 documentation package"
 HOMEPAGE="https://www.ni.com/linux/"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q4/rpm/ni/el9/ni-488.2-documentation-23.5.0.49246-0+f94.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-488.2-documentation-23.5.0.49246-0+f94.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
