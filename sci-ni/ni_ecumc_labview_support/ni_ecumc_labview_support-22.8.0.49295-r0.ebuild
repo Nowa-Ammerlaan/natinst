@@ -27,5 +27,4 @@ app-arch/rpm
 >=sci-ni/ni_ecumc_example_finder_support-22.8.0
 >=sci-ni/ni_ecumc_notices-22.8.0
 >=sci-ni/ni_ecumc_xnet_support-22.8.0
->=sci-ni/ni_labview-22.0.0
 "
