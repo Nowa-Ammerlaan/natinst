@@ -14,7 +14,7 @@ if ! command -v rpm &> /dev/null; then
 fi
 
 # Location on the internet of the rpm files, without https, this should be the only thing you have to edit
-rpm_location="labs.picotech.com/rc/picoscope7/rpm/x86_64/"
+rpm_location="labs.picotech.com/picoscope7/rpm/x86_64/"
 distdir="$(portageq distdir)"
 
 printf "Downloading rpms from https: ${rpm_location}"
