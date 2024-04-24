@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Provides NI-VISA C Development Examples"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-visa-devel-24.0.0.49400-0+f248.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-visa-devel-24.0.0.49400-0+f248.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

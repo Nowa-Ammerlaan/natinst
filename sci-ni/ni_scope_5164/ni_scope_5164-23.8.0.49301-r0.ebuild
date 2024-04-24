@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-Scope 5164 Device Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-scope-5164-23.8.0.49301-0+f149.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-scope-5164-23.8.0.49301-0+f149.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

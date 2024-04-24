@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Shares NI-VISA resources over the network"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-visa-server-24.0.0.49402-0+f250.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-visa-server-24.0.0.49402-0+f250.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

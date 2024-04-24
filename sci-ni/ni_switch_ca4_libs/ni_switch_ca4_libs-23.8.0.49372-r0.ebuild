@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-SWITCH Device Libraries for NI 2524/5/6, 273x, and 274x Switches"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-switch-ca4-libs-23.8.0.49372-0+f220.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-switch-ca4-libs-23.8.0.49372-0+f220.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

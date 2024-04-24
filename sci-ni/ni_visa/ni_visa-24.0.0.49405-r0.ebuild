@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-VISA (metapackage)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-visa-24.0.0.49405-0+f253.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-visa-24.0.0.49405-0+f253.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-488.2 system API support package"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-488.2-sysapi-support-23.5.0.49254-0+f102.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-488.2-sysapi-support-23.5.0.49254-0+f102.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

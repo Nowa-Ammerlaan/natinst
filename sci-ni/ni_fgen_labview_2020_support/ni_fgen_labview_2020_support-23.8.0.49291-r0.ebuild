@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-FGEN LabVIEW 2020 Development Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-fgen-labview-2020-support-23.8.0.49291-0+f139.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-fgen-labview-2020-support-23.8.0.49291-0+f139.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"

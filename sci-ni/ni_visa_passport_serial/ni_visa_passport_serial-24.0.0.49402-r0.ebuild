@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Enables support for RS-232 and RS-485 serial devices"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-visa-passport-serial-24.0.0.49402-0+f250.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-visa-passport-serial-24.0.0.49402-0+f250.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 KEYWORDS="~amd64"
