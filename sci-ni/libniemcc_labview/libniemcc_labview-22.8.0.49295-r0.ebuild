@@ -9,11 +9,11 @@ inherit rpm-extended
 
 DESCRIPTION="Libraries for ECU Measurement and Calibration (ECUMC) Toolkit LabVIEW Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/libniemcc-labview-22.8.0.49295-0+f143.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/libniemcc-labview-22.8.0.49295-0+f143.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

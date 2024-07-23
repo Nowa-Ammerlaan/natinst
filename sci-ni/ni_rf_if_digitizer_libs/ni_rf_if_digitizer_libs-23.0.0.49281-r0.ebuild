@@ -9,11 +9,11 @@ inherit rpm-extended
 
 DESCRIPTION="NI IF Digitizer Runtime Installer Product"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-rf-if-digitizer-libs-23.0.0.49281-0+f129.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-rf-if-digitizer-libs-23.0.0.49281-0+f129.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

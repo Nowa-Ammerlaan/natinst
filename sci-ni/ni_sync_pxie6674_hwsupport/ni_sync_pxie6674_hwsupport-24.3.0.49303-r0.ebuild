@@ -9,11 +9,11 @@ inherit rpm-extended
 
 DESCRIPTION="NI routing adapter library for NI PXIe-6674T"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-sync-pxie6674-hwsupport-24.3.0.49303-0+f151.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-sync-pxie6674-hwsupport-24.3.0.49303-0+f151.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

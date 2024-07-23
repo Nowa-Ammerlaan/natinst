@@ -14,7 +14,7 @@ if ! command -v rpm &> /dev/null; then
 fi
 
 # Location on the internet of the rpm files, without https, this should be the only thing you have to edit
-rpm_location="download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/"
+rpm_location="download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/"
 distdir="$(portageq distdir)"
 
 printf "Downloading rpms from https://${rpm_location}\n"

@@ -9,11 +9,11 @@ inherit rpm-extended
 
 DESCRIPTION="LabVIEW Run-Time Engine"
 HOMEPAGE="https://www.ni.com/linux"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/labview-2023-rte-23.3.2.49153-0+f1.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/labview-2023-rte-23.3.2.49153-0+f1.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

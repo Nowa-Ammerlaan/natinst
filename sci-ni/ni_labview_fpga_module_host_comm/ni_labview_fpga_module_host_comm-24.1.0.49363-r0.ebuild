@@ -9,11 +9,11 @@ inherit rpm-extended
 
 DESCRIPTION="host_comm_lvfpga_addoni_linux"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-labview-fpga-module-host-comm-24.1.0.49363-0+f211.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-labview-fpga-module-host-comm-24.1.0.49363-0+f211.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

@@ -7,16 +7,16 @@ EAPI=8
 
 inherit rpm-extended
 
-DESCRIPTION=""
-HOMEPAGE=""
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q1/rpm/ni/el9/ni-rio-niriochinch-dkms-24.0.0.49234-0+f82.x86_64.rpm"
+DESCRIPTION="NI PXI Platform Software Errors"
+HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-pxiplatformsoftware-errors-24.5.0.49289-0+f137.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 
 RDEPEND="
-
+app-arch/rpm
 "

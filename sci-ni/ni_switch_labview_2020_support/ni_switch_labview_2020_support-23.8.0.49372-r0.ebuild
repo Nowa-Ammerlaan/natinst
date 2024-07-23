@@ -9,11 +9,11 @@ inherit rpm-extended
 
 DESCRIPTION="NI-SWITCH LabVIEW 2020 Development Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-switch-labview-2020-support-23.8.0.49372-0+f220.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-switch-labview-2020-support-23.8.0.49372-0+f220.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 
