@@ -18,12 +18,12 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+>=intel-oneapi/intel_dlfdkit_getting_started-2021.4.0-r2105
+>=intel-oneapi/intel_oneapi_common_vars-2021.4.0-r327
+>=intel-oneapi/intel_oneapi_dnnl_devel-2021.4.0-r467
 app-alternatives/sh
 app-arch/rpm
->=intel-oneapi/intel_dlfdkit_getting_started-2021.4.0-r2105
 intel-oneapi/intel_oneapi_ccl_devel_202140
 intel-oneapi/intel_oneapi_common_licensing_202140
->=intel-oneapi/intel_oneapi_common_vars-2021.4.0-r327
 intel-oneapi/intel_oneapi_dev_utilities_202140
->=intel-oneapi/intel_oneapi_dnnl_devel-2021.4.0-r467
 "

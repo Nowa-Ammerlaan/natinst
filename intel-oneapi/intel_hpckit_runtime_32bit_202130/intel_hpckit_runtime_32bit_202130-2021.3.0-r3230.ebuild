@@ -18,11 +18,11 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+>=intel-oneapi/intel_hpckit_getting_started-2021.3.0-r3230
+>=intel-oneapi/intel_oneapi_common_vars-2021.3.0-r261
 app-arch/rpm
 intel-oneapi/intel_basekit_runtime_32bit_202130
->=intel-oneapi/intel_hpckit_getting_started-2021.3.0-r3230
 intel-oneapi/intel_oneapi_common_licensing_202130
->=intel-oneapi/intel_oneapi_common_vars-2021.3.0-r261
 intel-oneapi/intel_oneapi_compiler_dpcpp_cpp_and_cpp_classic_runtime_32bit_202130
 intel-oneapi/intel_oneapi_compiler_fortran_runtime_32bit_202130
 "

@@ -18,12 +18,12 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+>=intel-oneapi/intel_iotkit_getting_started-2023.0.0-r25397
+>=intel-oneapi/intel_oneapi_common_vars-2023.0.0-r25325
+>=intel-oneapi/intel_oneapi_inspector-2023.0.0-r25340
 app-arch/rpm
 intel-oneapi/intel_basekit_32bit_202300
->=intel-oneapi/intel_iotkit_getting_started-2023.0.0-r25397
 intel-oneapi/intel_oneapi_common_licensing_202300
->=intel-oneapi/intel_oneapi_common_vars-2023.0.0-r25325
 intel-oneapi/intel_oneapi_compiler_dpcpp_cpp_and_cpp_classic_32bit_202300
 intel-oneapi/intel_oneapi_dev_utilities_202180
->=intel-oneapi/intel_oneapi_inspector-2023.0.0-r25340
 "

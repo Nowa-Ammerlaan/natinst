@@ -18,7 +18,6 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-arch/rpm
 >=intel-oneapi/intel_oneapi_runtime_ccl-2021.6.0-r568
 >=intel-oneapi/intel_oneapi_runtime_dal-2021.6.0-r915
 >=intel-oneapi/intel_oneapi_runtime_dnnl-2022.1.0-r132
@@ -32,4 +31,5 @@ app-arch/rpm
 >=intel-oneapi/intel_oneapi_runtime_openmp-2022.1.0-r3768
 >=intel-oneapi/intel_oneapi_runtime_tbb-2021.6.0-r835
 >=intel-oneapi/intel_oneapi_runtime_vpl-2022.1.0-r154
+app-arch/rpm
 "

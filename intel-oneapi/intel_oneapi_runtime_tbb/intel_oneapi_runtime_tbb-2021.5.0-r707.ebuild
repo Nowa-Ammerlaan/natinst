@@ -18,7 +18,7 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+=intel-oneapi/intel_oneapi_runtime_tbb_common-2021.5.0-r707
 app-alternatives/sh
 app-arch/rpm
-=intel-oneapi/intel_oneapi_runtime_tbb_common-2021.5.0-r707
 "

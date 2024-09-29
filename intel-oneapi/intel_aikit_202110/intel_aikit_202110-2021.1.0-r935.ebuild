@@ -18,15 +18,15 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-alternatives/sh
-app-arch/rpm
 >=intel-oneapi/intel_aikit_getting_started-2021.1.0-r935
-intel-oneapi/intel_oneapi_common_licensing_202111
 >=intel-oneapi/intel_oneapi_common_vars-2021.1.1-r60
-intel-oneapi/intel_oneapi_dev_utilities_202111
 >=intel-oneapi/intel_oneapi_ilit-1.0.0-r204
 >=intel-oneapi/intel_oneapi_model_zoo-1.8.0-r204
 >=intel-oneapi/intel_oneapi_python-2021.1.1-r44
 >=intel-oneapi/intel_oneapi_pytorch-1.5.0-r726
 >=intel-oneapi/intel_oneapi_tensorflow-2.2.0-r219
+app-alternatives/sh
+app-arch/rpm
+intel-oneapi/intel_oneapi_common_licensing_202111
+intel-oneapi/intel_oneapi_dev_utilities_202111
 "

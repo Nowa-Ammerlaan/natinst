@@ -18,11 +18,11 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+>=intel-oneapi/intel_iotkit_getting_started-2021.2.0-r2742
+>=intel-oneapi/intel_oneapi_common_vars-2021.2.0-r195
 app-arch/rpm
 intel-oneapi/intel_basekit_runtime_202120
->=intel-oneapi/intel_iotkit_getting_started-2021.2.0-r2742
 intel-oneapi/intel_oneapi_common_licensing_202120
->=intel-oneapi/intel_oneapi_common_vars-2021.2.0-r195
 intel-oneapi/intel_oneapi_compiler_dpcpp_cpp_runtime_202120
 intel-oneapi/intel_oneapi_dev_utilities_202120
 "

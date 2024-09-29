@@ -18,8 +18,8 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-arch/rpm
 >=intel-oneapi/intel_basekit_getting_started-2021.4.0-r3422
-intel-oneapi/intel_oneapi_common_licensing_202140
 >=intel-oneapi/intel_oneapi_common_vars-2021.4.0-r327
+app-arch/rpm
+intel-oneapi/intel_oneapi_common_licensing_202140
 "

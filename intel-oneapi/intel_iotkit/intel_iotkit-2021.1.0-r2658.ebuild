@@ -18,8 +18,6 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-alternatives/sh
-app-arch/rpm
 >=intel-oneapi/intel_basekit-2021.1.0-r2403
 >=intel-oneapi/intel_iotkit_getting_started-2021.1.0-r2658
 >=intel-oneapi/intel_oneapi_common_licensing-2021.1.1-r60
@@ -29,4 +27,6 @@ app-arch/rpm
 >=intel-oneapi/intel_oneapi_eclipse_ide-2021.1.1-r52
 >=intel-oneapi/intel_oneapi_inspector-2021.1.1-r42
 >=intel-oneapi/intel_oneapi_iot_eclipse_plugins-2021.1.1-r69
+app-alternatives/sh
+app-arch/rpm
 "

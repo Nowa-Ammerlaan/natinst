@@ -18,7 +18,7 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+=intel-oneapi/intel_oneapi_runtime_ipp_crypto_common-2021.6.2-r15006
 app-alternatives/sh
 app-arch/rpm
-=intel-oneapi/intel_oneapi_runtime_ipp_crypto_common-2021.6.2-r15006
 "

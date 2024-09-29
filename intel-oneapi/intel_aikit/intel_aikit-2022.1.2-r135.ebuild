@@ -18,8 +18,6 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-alternatives/sh
-app-arch/rpm
 >=intel-oneapi/intel_aikit_getting_started-2022.1.2-r135
 >=intel-oneapi/intel_oneapi_common_licensing-2022.0.0-r59
 >=intel-oneapi/intel_oneapi_common_vars-2022.0.0-r59
@@ -29,4 +27,6 @@ app-arch/rpm
 >=intel-oneapi/intel_oneapi_python-2022.0.2-r155
 >=intel-oneapi/intel_oneapi_pytorch-1.8.0-r1291
 >=intel-oneapi/intel_oneapi_tensorflow-2.6.0-r128
+app-alternatives/sh
+app-arch/rpm
 "

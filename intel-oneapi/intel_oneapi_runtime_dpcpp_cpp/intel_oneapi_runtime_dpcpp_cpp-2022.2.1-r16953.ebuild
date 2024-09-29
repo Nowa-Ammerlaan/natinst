@@ -18,10 +18,10 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-alternatives/sh
-app-arch/rpm
 =intel-oneapi/intel_oneapi_runtime_compilers-2022.2.1-r16953
 =intel-oneapi/intel_oneapi_runtime_dpcpp_cpp_common-2022.2.1-r16953
 =intel-oneapi/intel_oneapi_runtime_opencl-2022.2.1-r16953
 >=intel-oneapi/intel_oneapi_runtime_tbb-2021.7.1-r15005
+app-alternatives/sh
+app-arch/rpm
 "
