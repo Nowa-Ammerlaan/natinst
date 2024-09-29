@@ -9,11 +9,11 @@ inherit rpm-extended
 
 DESCRIPTION="PicoScope 6000 series Linux driver"
 HOMEPAGE="https://www.picotech.com"
-SRC_URI="https://labs.picotech.com/rc/picoscope7/rpm/x86_64/libps6000-2.1.130-6r5654.x86_64.rpm"
+SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libps6000-2.1.130-6r5654.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

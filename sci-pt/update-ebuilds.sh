@@ -169,8 +169,8 @@ HOMEPAGE="${homepage}"
 SRC_URI="https://${rpm}"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

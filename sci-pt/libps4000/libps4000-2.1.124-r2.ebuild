@@ -12,8 +12,8 @@ HOMEPAGE="https://www.picotech.com"
 SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libps4000-2.1.124-2r5349.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

@@ -9,11 +9,11 @@ inherit rpm-extended
 
 DESCRIPTION="Pico Technology USB TC-08 Linux driver"
 HOMEPAGE="https://www.picotech.com"
-SRC_URI="https://labs.picotech.com/rc/picoscope7/rpm/x86_64/libusbtc08-2.0.130-1r5654.x86_64.rpm"
+SRC_URI="https://labs.picotech.com/picoscope7/rpm/x86_64/libusbtc08-2.0.130-1r5654.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 
