@@ -18,9 +18,9 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+>=intel-oneapi/intel_oneapi_common_vars-2021.4.0-r327
 app-arch/rpm
 intel-oneapi/intel_oneapi_common_licensing_202140
->=intel-oneapi/intel_oneapi_common_vars-2021.4.0-r327
 intel-oneapi/intel_oneapi_compiler_dpcpp_cpp_classic_fortran_shared_runtime_202140
 intel-oneapi/intel_oneapi_compiler_dpcpp_cpp_runtime_202140
 "

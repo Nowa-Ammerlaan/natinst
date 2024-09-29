@@ -18,6 +18,6 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-arch/rpm
 =intel-oneapi/intel_oneapi_runtime_compilers_common-2023.0.0-r25370
+app-arch/rpm
 "

@@ -18,7 +18,7 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-arch/rpm
 =intel-oneapi/intel_oneapi_runtime_compilers_common-2022.2.1-r16953
 =intel-oneapi/intel_oneapi_runtime_openmp_32bit-2022.2.1-r16953
+app-arch/rpm
 "

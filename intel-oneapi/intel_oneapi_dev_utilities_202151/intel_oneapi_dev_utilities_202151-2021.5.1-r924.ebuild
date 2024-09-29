@@ -18,9 +18,9 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+>=intel-oneapi/intel_oneapi_common_vars-2022.0.0-r59
+>=intel-oneapi/intel_oneapi_dev_utilities_eclipse_cfg-2021.5.1-r924
 app-alternatives/sh
 app-arch/rpm
 intel-oneapi/intel_oneapi_common_licensing_202200
->=intel-oneapi/intel_oneapi_common_vars-2022.0.0-r59
->=intel-oneapi/intel_oneapi_dev_utilities_eclipse_cfg-2021.5.1-r924
 "

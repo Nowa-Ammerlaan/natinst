@@ -18,9 +18,9 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+=intel-oneapi/intel_oneapi_runtime_mkl_common-2023.0.0-r25398
+>=intel-oneapi/intel_oneapi_runtime_dpcpp_cpp-2023.0.0-r25370
+>=intel-oneapi/intel_oneapi_runtime_tbb-2021.8.0-r25334
 app-alternatives/sh
 app-arch/rpm
->=intel-oneapi/intel_oneapi_runtime_dpcpp_cpp-2023.0.0-r25370
-=intel-oneapi/intel_oneapi_runtime_mkl_common-2023.0.0-r25398
->=intel-oneapi/intel_oneapi_runtime_tbb-2021.8.0-r25334
 "

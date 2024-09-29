@@ -18,18 +18,18 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+>=intel-oneapi/intel_hpckit_getting_started-2022.3.1-r16997
+>=intel-oneapi/intel_oneapi_common_vars-2022.2.1-r14969
+>=intel-oneapi/intel_oneapi_diagnostics_utility-2022.1.2-r14995
+>=intel-oneapi/intel_oneapi_inspector-2022.3.1-r15318
 app-alternatives/sh
 app-arch/rpm
 intel-oneapi/intel_basekit_202231
->=intel-oneapi/intel_hpckit_getting_started-2022.3.1-r16997
 intel-oneapi/intel_oneapi_clck_202171
 intel-oneapi/intel_oneapi_common_licensing_202221
->=intel-oneapi/intel_oneapi_common_vars-2022.2.1-r14969
 intel-oneapi/intel_oneapi_compiler_dpcpp_cpp_and_cpp_classic_202221
 intel-oneapi/intel_oneapi_compiler_fortran_202221
 intel-oneapi/intel_oneapi_dev_utilities_202171
->=intel-oneapi/intel_oneapi_diagnostics_utility-2022.1.2-r14995
->=intel-oneapi/intel_oneapi_inspector-2022.3.1-r15318
 intel-oneapi/intel_oneapi_itac_202171
 intel-oneapi/intel_oneapi_mpi_devel_202171
 "

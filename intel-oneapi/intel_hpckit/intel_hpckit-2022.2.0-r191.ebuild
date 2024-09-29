@@ -18,8 +18,6 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-alternatives/sh
-app-arch/rpm
 >=intel-oneapi/intel_basekit-2022.2.0
 >=intel-oneapi/intel_hpckit_getting_started-2022.2.0-r191
 >=intel-oneapi/intel_oneapi_clck-2021.6.0-r650
@@ -32,4 +30,6 @@ app-arch/rpm
 >=intel-oneapi/intel_oneapi_inspector-2022.1.0-r123
 >=intel-oneapi/intel_oneapi_itac-2021.6.0-r434
 >=intel-oneapi/intel_oneapi_mpi_devel-2021.6.0-r602
+app-alternatives/sh
+app-arch/rpm
 "

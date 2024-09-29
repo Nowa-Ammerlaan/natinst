@@ -18,10 +18,10 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
+>=intel-oneapi/intel_oneapi_common_vars-2021.2.0-r195
+>=intel-oneapi/intel_oneapi_condaindex-2021.2.0-r94
 app-alternatives/sh
 app-arch/rpm
 intel-oneapi/intel_oneapi_common_licensing_202120
->=intel-oneapi/intel_oneapi_common_vars-2021.2.0-r195
->=intel-oneapi/intel_oneapi_condaindex-2021.2.0-r94
 intel-oneapi/intel_oneapi_openmp_common_202120
 "

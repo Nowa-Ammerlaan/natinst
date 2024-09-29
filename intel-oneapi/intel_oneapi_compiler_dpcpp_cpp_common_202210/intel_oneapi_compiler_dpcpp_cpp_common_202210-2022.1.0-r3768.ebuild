@@ -18,12 +18,12 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-alternatives/sh
-app-arch/rpm
-intel-oneapi/intel_oneapi_common_licensing_202210
 >=intel-oneapi/intel_oneapi_common_vars-2022.1.0-r161
 >=intel-oneapi/intel_oneapi_compiler_cpp_eclipse_cfg-2022.1.0-r3768
 >=intel-oneapi/intel_oneapi_compiler_dpcpp_eclipse_cfg-2022.1.0-r3768
+app-alternatives/sh
+app-arch/rpm
+intel-oneapi/intel_oneapi_common_licensing_202210
 intel-oneapi/intel_oneapi_compiler_shared_common_202210
 intel-oneapi/intel_oneapi_icc_eclipse_plugin_cpp_202210
 "

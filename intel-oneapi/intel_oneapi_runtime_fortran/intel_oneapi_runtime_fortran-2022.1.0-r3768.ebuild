@@ -18,9 +18,9 @@ SLOT="0"
 RESTRICT="bindist mirror"
 
 RDEPEND="
-app-alternatives/sh
-app-arch/rpm
 =intel-oneapi/intel_oneapi_runtime_compilers-2022.1.0-r3768
 =intel-oneapi/intel_oneapi_runtime_fortran_common-2022.1.0-r3768
 >=intel-oneapi/intel_oneapi_runtime_mpi-2021.6.0-r602
+app-alternatives/sh
+app-arch/rpm
 "
