@@ -21,5 +21,5 @@ RDEPEND="
 app-alternatives/sh
 app-arch/rpm
 intel-oneapi/intel_basekit
-intel-oneapi/python2_jsonschema
+dev-python/jsonschema
 "

@@ -21,7 +21,7 @@ RDEPEND="
 >=intel-oneapi/intel_oneapi_common_vars-2023.1.0-r43473
 app-alternatives/sh
 app-arch/rpm
-intel-oneapi/gcc_c++
+sys-devel/gcc
 intel-oneapi/intel_oneapi_common_licensing_202310
 intel-oneapi/intel_oneapi_compiler_dpcpp_cpp_common_202310
 intel-oneapi/intel_oneapi_compiler_dpcpp_cpp_runtime_202310

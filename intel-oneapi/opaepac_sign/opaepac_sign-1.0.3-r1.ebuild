@@ -19,6 +19,4 @@ RESTRICT="bindist mirror"
 
 RDEPEND="
 app-arch/rpm
-dev-lang/python-exec
-~dev-lang/python-3.6
 "

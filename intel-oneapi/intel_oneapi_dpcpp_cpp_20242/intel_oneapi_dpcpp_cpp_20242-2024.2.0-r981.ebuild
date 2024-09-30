@@ -24,7 +24,7 @@ RDEPEND="
 >=intel-oneapi/intel_oneapi_compiler_shared_20242-2024.2.0-r981
 app-alternatives/sh
 app-arch/rpm
-intel-oneapi/gcc_c++
+sys-devel/gcc
 intel-oneapi/intel_oneapi_common_licensing_20242
 intel-oneapi/intel_oneapi_common_oneapi_vars_20242
 intel-oneapi/intel_oneapi_dev_utilities_20242

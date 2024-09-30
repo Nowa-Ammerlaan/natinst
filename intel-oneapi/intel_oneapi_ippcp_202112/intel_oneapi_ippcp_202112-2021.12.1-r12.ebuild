@@ -24,5 +24,5 @@ app-alternatives/sh
 app-arch/rpm
 intel-oneapi/intel_oneapi_common_licensing_20242
 intel-oneapi/intel_oneapi_common_oneapi_vars_20242
-intel-oneapi/openssl_devel
+dev-libs/openssl
 "
