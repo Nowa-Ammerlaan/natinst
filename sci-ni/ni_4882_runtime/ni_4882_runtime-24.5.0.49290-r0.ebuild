@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-488.2 Runtime for Linux (metapackage)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-488.2-runtime-24.5.0.49290-0+f138.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-488.2-runtime-24.5.0.49290-0+f138.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

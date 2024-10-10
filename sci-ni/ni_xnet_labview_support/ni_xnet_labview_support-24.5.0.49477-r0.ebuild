@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-XNET LabVIEW Development Support"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-xnet-labview-support-24.5.0.49477-0+f325.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-xnet-labview-support-24.5.0.49477-0+f325.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

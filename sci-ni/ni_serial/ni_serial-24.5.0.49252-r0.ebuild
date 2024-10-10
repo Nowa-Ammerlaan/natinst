@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Provides Driver Support for NI's Serial hardware (metapackage)"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-serial-24.5.0.49252-0+f100.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-serial-24.5.0.49252-0+f100.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

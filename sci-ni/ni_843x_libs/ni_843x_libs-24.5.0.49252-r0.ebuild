@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI 843x Device Libraries"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-843x-libs-24.5.0.49252-0+f100.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-843x-libs-24.5.0.49252-0+f100.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

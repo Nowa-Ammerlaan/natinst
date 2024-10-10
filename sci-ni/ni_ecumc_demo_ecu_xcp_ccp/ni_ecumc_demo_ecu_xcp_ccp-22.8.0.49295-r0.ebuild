@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="XCP and CCP demo ECU applications for the ECU Measurement and Calibration (ECUMC) Toolkit"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-ecumc-demo-ecu-xcp-ccp-22.8.0.49295-0+f143.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-ecumc-demo-ecu-xcp-ccp-22.8.0.49295-0+f143.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

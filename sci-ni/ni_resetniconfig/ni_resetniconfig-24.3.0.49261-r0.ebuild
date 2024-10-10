@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Reset NI Configuration Tool for Linux"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-resetniconfig-24.3.0.49261-0+f109.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-resetniconfig-24.3.0.49261-0+f109.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

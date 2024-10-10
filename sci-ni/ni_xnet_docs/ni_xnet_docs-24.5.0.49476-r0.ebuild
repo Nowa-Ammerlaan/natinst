@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-XNET Documentation"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-xnet-docs-24.5.0.49476-0+f324.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-xnet-docs-24.5.0.49476-0+f324.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

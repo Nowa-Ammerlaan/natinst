@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-XNET API library resources"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/libnixnet-bin-24.5.0.49476-0+f324.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/libnixnet-bin-24.5.0.49476-0+f324.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

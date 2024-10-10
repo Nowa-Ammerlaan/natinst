@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="NI-XNET Legal Notices"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/ni-xnet-notices-24.5.0.49454-0+f302.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-xnet-notices-24.5.0.49454-0+f302.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

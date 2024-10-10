@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="Development files for the Automotive Diagnostic Command Set C API"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q3/rpm/ni/el9/libnidiagcs-devel-22.8.0.49295-0+f143.x86_64.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/libnidiagcs-devel-22.8.0.49295-0+f143.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
