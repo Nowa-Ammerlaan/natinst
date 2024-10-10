@@ -48,57 +48,21 @@ emerge gentoo-sources:6.1.X
 dkms autoinstall -k 6.1.X-gentoo
 ```
 
-At the time of writing the latest kernel version compatible with the NI Kernel Abstraction Layer (nikal) is 6.4.
+At the time of writing the latest kernel version compatible with the NI Kernel Abstraction Layer (nikal) is 6.11.
 
 Now reboot to the kernel you built the modules for, and start the relevant service with:
 
 ```
-rc-service nipal start
-```
-
-Or, on systemd systems:
-
-```
-/etc/init.d/nipal start
-```
-
-Note that simply running `modprobe nipalk` is not enough. 
-Applications such as `visaconf` require the platform abstraction service to be running as well, otherwise it will fail with an error suggesting that the module `nipalk` is not loaded even if the module actually is loaded.
-
-Optionally, add the service to the default runlevel to automatically start it at boot:
-
-```
-rc-update add nipal default
-```
-
-Now you should be able to run `visaconf` from the terminal or through the desktop shortcut to configure VISA.
-
-Note that NI has not included a systemd service file, so auto-starting with systemd requires some extra steps:
-Add the following `nipal.service` file to `/etc/systemd/system`:
-
-```
-[Unit]
-Description=National Instruments Platform Abstraction Layer
-Requisite=dkms.service
-After=dkms.service remote-fs.target
-
-[Service]
-Type=forking
-ExecStart=/bin/bash /etc/init.d/nipal start
-ExecStop=/bin/bash /etc/init.d/nipal stop
-
-[Install]
-WantedBy=multi-user.target
-```
-
-And enable it with:
-
-```
-systemctl enable nipal
+systemctl enable --now nipal
 ```
 
 Note that this will also cause the dkms service to be loaded at boot.
-The dkms service will attempt to build the kernel modules for the current kernel version if it detects that they are missing.
+The dkms service will attempt to build the NI kernel modules for the current kernel version if it detects that they are missing.
+
+Note also that simply running `modprobe nipalk` is not enough.
+Applications such as `visaconf` require the platform abstraction service to be running as well, otherwise it will fail with an error suggesting that the module `nipalk` is not loaded even if the module actually is loaded.
+
+Now you should be able to run `visaconf` from the terminal or through the desktop shortcut to configure VISA.
 
 ### Disclaimer
 
