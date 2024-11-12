@@ -1,5 +1,5 @@
 # VISA, DAQ, NI LabVIEW, PicoScope and oneAPI ebuild repository
-[![pkgcheck](https://github.com/AndrewAmmerlaan/natinst/workflows/pkgcheck/badge.svg)](https://github.com/AndrewAmmerlaan/natinst/actions?query=workflow%3Apkgcheck)
+[![pkgcheck](https://github.com/Nowa-Ammerlaan/natinst/workflows/pkgcheck/badge.svg)](https://github.com/Nowa-Ammerlaan/natinst/actions?query=workflow%3Apkgcheck)
 
 This ebuild repository contains ebuilds for:
 - VISA (Virtual Instrument Software Architecture),

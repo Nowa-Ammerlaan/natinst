@@ -198,8 +198,8 @@ EOF
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>andrewammerlaan@gentoo.org</email>
-		<name>Andrew Ammerlaan</name>
+		<email>nowa@gentoo.org</email>
+		<name>Nowa Ammerlaan</name>
 	</maintainer>
 </pkgmetadata>
 EOF
