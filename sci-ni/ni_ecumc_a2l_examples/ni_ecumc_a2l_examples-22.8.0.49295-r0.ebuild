@@ -9,7 +9,7 @@ inherit rpm-extended
 
 DESCRIPTION="A2L Examples for ECU Measurement and Calibration (ECUMC) Toolkit"
 HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
-SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q4/rpm/ni/el9/ni-ecumc-a2l-examples-22.8.0.49295-0+f143.noarch.rpm"
+SRC_URI="https://download.ni.com/ni-linux-desktop/2025/Q1/rpm/ni/el9/ni-ecumc-a2l-examples-22.8.0.49295-0+f143.noarch.rpm"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
