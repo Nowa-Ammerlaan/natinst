@@ -8,7 +8,9 @@ on:
 
 jobs:
   build:
-    runs-on: gentoo/stage3
+    runs-on: ubuntu-latest
+    container:
+        image: gentoo/stage3:latest
     steps:
     - uses: actions/checkout@v4
     - name: Setup master repositories
@@ -16,7 +18,8 @@ jobs:
         ./scripts/setup-master-gentoo.sh
     - name: Install pkgcheck
       run: |
-        pip install --user pkgcheck
+        echo -e "MAKEOPTS=\"-j$(nproc) -l$(nproc)\"\nACCEPT_LICENSE=\"*\"" >> /etc/portage/make.conf
+        FEATURES="getbinpkg binpkg-ignore-signature parallel-fetch parallel-install pkgdir-index-trusted" USE="-initramfs" emerge --quiet --noreplace -j$(nproc) -l$(nproc) --autounmask-continue --with-bdeps=n dev-util/pkgcheck
     - name: Run pkgcheck
       run : |
         pkgcheck --color y ci
