@@ -3,7 +3,7 @@
 
 # This ebuild was generated with ../update-ebuilds.sh
 
-EAPI=7
+EAPI=8
 
 inherit rpm-extended
 
