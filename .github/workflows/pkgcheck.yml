@@ -21,6 +21,7 @@ jobs:
         args: >
           -c "
           runner() { echo \"::group::${1}\"; shift 1; \"$@\"; local exit=$?; echo; echo \"::endgroup::\"; return $exit; } ;
+          runner \"Preping repo dir\" mkdir -p ~/.cache/pkgcheck/repos/ || exit 1 ;
           runner \"Linking gentoo repo\" ln -s /var/db/repos/gentoo ~/.cache/pkgcheck/repos/gentoo || exit 1 ;
           runner \"Linking guru repo\" ln -s /var/db/repos/guru ~/.cache/pkgcheck/repos/guru || exit 1 ;
           runner \"Update repo metadata\" pmaint regen --dir ~/.cache/pkgcheck/repos . ;
