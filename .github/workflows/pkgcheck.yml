@@ -11,21 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Setup master repositories
+      run: |
+        ./scripts/setup-master-gentoo.sh
+    - name: Install pkgcheck
+      run: |
+        pip install pkgcheck
     - name: Run pkgcheck
-      uses: docker://ghcr.io/pkgcore/pkgcheck:latest
-      with:
-        entrypoint: /usr/bin/bash
-        args: >
-          -c "
-          runner() { echo \"::group::${1}\"; shift 1; \"$@\"; local exit=$?; echo; echo \"::endgroup::\"; return $exit; } ;
-          runner \"Preping portage config dir\" mkdir -p /etc/portage || exit 1 ;
-          runner \"Enabling guru repo\" cp scripts/stub-repos.conf /etc/portage/repos.conf || exit 1 ;
-          runner \"Sync gentoo repo\" curl https://github.com/gentoo-mirror/gentoo/archive/master.tar.gz | tar xz -C /var/db/repos/gentoo --strip-components=1 || exit 1 ;
-          runner \"Sync guru repo\" curl https://github.com/gentoo-mirror/guru/archive/master.tar.gz | tar xz -C /var/db/repos/guru --strip-components=1 || exit 1 ;
-          runner \"Update repo metadata\" pmaint regen --dir ~/.cache/pkgcheck/repos . ;
-          runner \"Marking workspace safe for git\" git config --global --add safe.directory '*' ;
-          runner \"Run pkgcheck\" pkgcheck --color y ci --failures ~/failures.json --exit GentooCI ${{ inputs.args }} ;
-          scan_exit_status=$? ;
-          pkgcheck replay --color y ~/failures.json ;
-          exit $scan_exit_status
-          "
+      run : |
+        pkgcheck --color y ci
