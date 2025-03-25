@@ -98,7 +98,9 @@ PATCHES=(
 )
 
 pkg_setup() {
-	use modules && [[ ${MERGE_TYPE} != binary ]] || return
+	if use modules && ! use dkms; then
+		[[ ${MERGE_TYPE} != binary ]] || return
+	fi
 
 	# do early before linux-mod-r1 so can use chkconfig to setup CONFIG_CHECK
 	get_version
