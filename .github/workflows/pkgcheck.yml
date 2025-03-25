@@ -19,9 +19,9 @@ jobs:
           -c "
           runner() { echo \"::group::${1}\"; shift 1; \"$@\"; local exit=$?; echo; echo \"::endgroup::\"; return $exit; } ;
           runner \"Preping portage config dir\" mkdir -p /etc/portage || exit 1 ;
-          runner \"Enabling guru repo\" cp scripts/stub-repos.conf /etc/portage/repos.conf ;
-          runner \"Sync gentoo repo\" pmaint sync gentoo || exit 1 ;
-          runner \"Sync guru repo\" pmaint sync guru || exit 1 ;
+          runner \"Enabling guru repo\" cp scripts/stub-repos.conf /etc/portage/repos.conf || exit 1 ;
+          runner \"Sync gentoo repo\" curl https://github.com/gentoo-mirror/gentoo/archive/master.tar.gz | tar xz -C /var/db/repos/gentoo --strip-components=1 || exit 1 ;
+          runner \"Sync guru repo\" curl https://github.com/gentoo-mirror/guru/archive/master.tar.gz | tar xz -C /var/db/repos/guru --strip-components=1 || exit 1 ;
           runner \"Update repo metadata\" pmaint regen --dir ~/.cache/pkgcheck/repos . ;
           runner \"Marking workspace safe for git\" git config --global --add safe.directory '*' ;
           runner \"Run pkgcheck\" pkgcheck --color y ci --failures ~/failures.json --exit GentooCI ${{ inputs.args }} ;
