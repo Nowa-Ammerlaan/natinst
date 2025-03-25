@@ -23,6 +23,7 @@ jobs:
           runner() { echo \"::group::${1}\"; shift 1; \"$@\"; local exit=$?; echo; echo \"::endgroup::\"; return $exit; } ;
           runner \"Preping repo dir\" mkdir -p ~/.cache/pkgcheck/repos/ ~/.cache/pkgcore/repos/ || exit 1 ;
           runner \"Show config\" pconfig dump || exit 1 ;
+          runner \"Show repos.conf\" cat /etc/portage/repos.conf || exit 1 ;
           runner \"Linking gentoo repo\" ln -s /var/db/repos/gentoo ~/.cache/pkgcore/repos/gentoo || exit 1 ;
           runner \"Linking guru repo\" ln -s /var/db/repos/guru ~/.cache/pkgcore/repos/guru || exit 1 ;
           runner \"Sync gentoo repo\" pmaint sync gentoo || exit 1 ;
