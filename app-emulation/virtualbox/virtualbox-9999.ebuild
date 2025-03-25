@@ -232,7 +232,7 @@ pkg_pretend() {
 pkg_setup() {
 	java-pkg-opt-2_pkg_setup
 	use python && python-single-r1_pkg_setup
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_unpack() {

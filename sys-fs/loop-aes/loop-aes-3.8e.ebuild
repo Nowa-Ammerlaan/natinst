@@ -35,7 +35,7 @@ PATCHES=(
 )
 
 pkg_setup() {
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 
 	CONFIG_CHECK="!BLK_DEV_LOOP"
 }

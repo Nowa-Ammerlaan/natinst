@@ -30,7 +30,7 @@ DEPEND="
 PATCHES=( "${FILESDIR}/${PN}-kernel-5.18.patch" )
 
 pkg_setup() {
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_prepare() {

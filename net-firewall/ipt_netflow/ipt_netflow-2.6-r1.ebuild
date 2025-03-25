@@ -48,7 +48,7 @@ pkg_setup() {
 	fi
 
 	IPT_LIB="/usr/$(get_libdir)/xtables"
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_unpack() {

@@ -25,7 +25,7 @@ IUSE="debug"
 CONFIG_CHECK="NET INET NET_UDP_TUNNEL CRYPTO_ALGAPI"
 
 pkg_setup() {
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 	# No need to do this check as it is also present in dkms.conf
 	if ! use dkms; then
 		if [[ -f $KERNEL_DIR/include/uapi/linux/wireguard.h ]]; then

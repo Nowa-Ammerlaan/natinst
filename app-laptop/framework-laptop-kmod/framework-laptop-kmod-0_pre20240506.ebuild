@@ -25,7 +25,7 @@ DOCS=(
 )
 
 pkg_setup() {
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 
 	MODULES_MAKEARGS+=(
 		KDIR="${KERNEL_DIR}"

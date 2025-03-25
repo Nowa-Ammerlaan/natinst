@@ -29,7 +29,7 @@ PATCHES=( "${FILESDIR}/${PN}-0.9.4-gentoo-paths.patch" )
 pkg_setup() {
 	CONFIG_CHECK="HAVE_KRETPROBES KALLSYMS_ALL KPROBES JUMP_LABEL"
 	CONFIG_CHECK+=" MODULE_UNLOAD !PREEMPT_RT ~STACKTRACE"
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_unpack() {

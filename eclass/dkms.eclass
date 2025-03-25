@@ -427,6 +427,26 @@ dkms_dopackage() {
 	fi
 }
 
+# @FUNCTION: dkms_pkg_setup
+# @DESCRIPTION:
+# Runs linux-info_pkg_setup for binary merges with USE=dkms enabled.
+# This ensure that the kernel environment variables are reset, which
+# would otherwise be intentionally skipped by linux-mod-r1.eclass
+dkms_pkg_setup() {
+	debug-print-function ${FUNCNAME} "$@"
+
+	[[ -z ${MODULES_OPTIONAL_IUSE} ]] ||
+		use "${MODULES_OPTIONAL_IUSE#+}" || return 0
+
+	linux-mod-r1_pkg_setup
+	if use dkms; then
+		unset SKIP_KERNEL_BINPKG_ENV_RESET
+		if [[ ${MERGE_TYPE} == binary ]]; then
+			linux-info_pkg_setup
+		fi
+	fi
+}
+
 # @FUNCTION: dkms_src_compile
 # @DESCRIPTION:
 # Runs dkms_autoconf if USE=dkms is enabled, otherwise runs
@@ -569,4 +589,4 @@ dkms_pkg_prerm() {
 
 fi
 
-EXPORT_FUNCTIONS src_compile src_install pkg_config pkg_postinst pkg_prerm
+EXPORT_FUNCTIONS pkg_setup src_compile src_install pkg_config pkg_postinst pkg_prerm

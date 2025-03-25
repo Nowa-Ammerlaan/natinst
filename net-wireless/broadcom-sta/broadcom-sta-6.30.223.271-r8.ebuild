@@ -90,7 +90,7 @@ pkg_setup() {
 		CONFIG_CHECK="${CONFIG_CHECK} IEEE80211 IEEE80211_CRYPT_TKIP"
 	fi
 
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_compile() {

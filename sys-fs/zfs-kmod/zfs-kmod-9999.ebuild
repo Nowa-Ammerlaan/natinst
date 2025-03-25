@@ -97,7 +97,7 @@ pkg_setup() {
 			"Linux ${kv_major_max}.${kv_minor_max} is the latest supported version"
 	fi
 
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_prepare() {

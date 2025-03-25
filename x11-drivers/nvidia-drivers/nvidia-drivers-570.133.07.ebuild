@@ -144,7 +144,7 @@ pkg_setup() {
 	set. Please do not report issues if run into e.g. kernel panics while
 	ignoring this."
 
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_prepare() {

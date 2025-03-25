@@ -26,7 +26,7 @@ IUSE="examples"
 CONFIG_CHECK="VIDEO_DEV"
 
 pkg_setup() {
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 	export KERNELRELEASE=${KV_FULL}
 }
 

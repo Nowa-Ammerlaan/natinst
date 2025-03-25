@@ -23,7 +23,7 @@ pkg_setup() {
 		local ERROR_SENSORS_HDAPS="${P} with USE=hdaps conflicts with in-kernel HDAPS (CONFIG_SENSORS_HDAPS)"
 	fi
 
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_compile() {

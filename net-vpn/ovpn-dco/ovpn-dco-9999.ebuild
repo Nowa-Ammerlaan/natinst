@@ -31,7 +31,7 @@ pkg_setup() {
 		CRYPTO_GCM
 		CRYPTO_CHACHA20POLY1305"
 
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_configure() {

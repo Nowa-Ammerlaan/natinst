@@ -48,7 +48,7 @@ src_prepare() {
 	# Install new Makefile to respect users CFLAGS and LDFLAGS
 	cp "${FILESDIR}"/makefile driver/Source/Linux/Makefile || die
 
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_compile() {

@@ -31,7 +31,7 @@ pkg_setup() {
 	local ERROR_INPUT_SPARSEKMAP="CONFIG_INPUT_SPARSEKMAP: is required for tuxedo-drivers"
 	local ERROR_IIOP="CONFIG_IIO: is required for tuxedo-drivers"
 
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_compile() {

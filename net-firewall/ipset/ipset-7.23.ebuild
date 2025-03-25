@@ -67,7 +67,7 @@ pkg_setup() {
 	fi
 
 	if use dkms || [[ ${build_modules} -eq 1 ]]; then
-		linux-mod-r1_pkg_setup
+		dkms_pkg_setup
 	fi
 }
 

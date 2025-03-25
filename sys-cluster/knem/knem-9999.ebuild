@@ -27,7 +27,7 @@ pkg_setup() {
 	linux-info_pkg_setup
 	CONFIG_CHECK="DMA_ENGINE"
 	check_extra_config
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 	ARCH="$(tc-arch-kernel)"
 	ABI="${KERNEL_ABI}"
 }

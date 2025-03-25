@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 CONFIG_CHECK="LIBCRC32C"
 
 pkg_setup() {
-	linux-mod-r1_pkg_setup
+	dkms_pkg_setup
 }
 
 src_prepare() {
