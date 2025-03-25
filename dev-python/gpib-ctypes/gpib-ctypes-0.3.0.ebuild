@@ -3,7 +3,8 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{10..13} )
 PYPI_PN="gpib_ctypes"
 inherit distutils-r1 pypi
 
@@ -27,5 +28,7 @@ python_prepare_all() {
 }
 
 pkg_postinst() {
-	elog "You'll need a GPIB driver to use this package, either the proprietary sci-ni/ni_4882 from National Instruments or the open-source sci-libs/linux-gpib (which also includes its own python bindings)"
+	elog "You will need a GPIB driver to use this package, either the proprietary"
+	elog "sci-ni/ni_4882 from National Instruments or the open-source"
+	elog "sci-libs/linux-gpib (which also includes its own python bindings)"
 }
