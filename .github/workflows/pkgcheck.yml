@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: gentoo/stage3
     steps:
     - uses: actions/checkout@v4
     - name: Setup master repositories
@@ -16,7 +16,7 @@ jobs:
         ./scripts/setup-master-gentoo.sh
     - name: Install pkgcheck
       run: |
-        pip install pkgcheck
+        pip install --user pkgcheck
     - name: Run pkgcheck
       run : |
         pkgcheck --color y ci
