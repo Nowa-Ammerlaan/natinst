@@ -3,7 +3,8 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{10..13} )
 
 DOCS_BUILDER="doxygen"
 DOCS_DIR="doc"
@@ -12,7 +13,7 @@ inherit distutils-r1 docs pypi udev
 
 DESCRIPTION="MCC Universal Library for Linux"
 HOMEPAGE="
-	https://www.mccdaq.com
+	https://digilent.com/shop/data-acquisition-daq/
 	https://github.com/mccdaq/uldaq
 	https://pypi.org/project/uldaq
 "
