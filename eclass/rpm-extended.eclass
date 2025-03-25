@@ -20,11 +20,18 @@
 # The rpm eclass provides the pkg_unpack function we need
 inherit rpm
 
+# In case the rpm contains a dkms package we use helper functions
+# from dkms.eclass
+inherit dkms
+
+# Some rpms may contain udev rules
+inherit udev
+
 case "${EAPI:-0}" in
-	0|1|2|3|4|5|6)
+	0|1|2|3|4|5|6|7)
 		die "Unsupported EAPI=${EAPI:-0} (too old) for ${ECLASS}"
 		;;
-	7|8)
+	8)
 		;;
 	*)
 		die "Unsupported EAPI=${EAPI} (unknown) for ${ECLASS}"
@@ -34,14 +41,10 @@ esac
 if [[ -z ${_RPM_EXTENDED_ECLASS} ]] ; then
 _RPM_EXTENDED_ECLASS=1
 
-if [[ ${EAPI} != 7 ]]; then
-	# Need rpm to extract scripts, we also need it in the pkg_rm phases so it
-	# has to be both BDEPEND and RDEPEND
-	BDEPEND="app-arch/rpm"
-	RDEPEND="app-arch/rpm"
-else
-	IDEPEND="app-arch/rpm"
-fi
+IDEPEND="app-arch/rpm"
+
+# Enable by default since rpm kernel mods are always dkms
+IUSE="+dkms"
 
 # Otherwise we get the S does not exist error
 S="${WORKDIR}"
@@ -54,17 +57,42 @@ RESTRICT="bindist"
 
 # @ECLASS_VARIABLE: RPM_SCRIPT_RUNNER
 # @DESCRIPTION:
-# Set which shell should run the rpm pre/post(un)install scripts. Defaults to
-# bash, can include extra arguments.
+# Set which shell should run the rpm pre/post(un)install scripts.
+# Defaults to bash, can include extra arguments.
 : ${RPM_SCRIPT_RUNNER:="bash"}
+
+# @ECLASS_VARIABLE: _RPM_CONTAINS_KMODS
+# @INTERNAL
+# @DEFAULT_UNSET
+# @DESCRIPTION:
+# Set to 1 by the eclass if kernel modules are found in the rpm.
+# The eclass runs the appropriate phase functions from dkms and
+# linux-mod-r1 eclasses if this is set.
+_RPM_CONTAINS_KMODS=
 
 # @FUNCTION: rpm-extended_src_compile
 # @DESCRIPTION:
-# As everything in the rpm file is prebuilt we do not need to compile anything,
-# therefore we add an empty src_compile function to avoid errors.
+# As everything in the rpm file is prebuilt we do not need to compile
+# anything. If there are kernel modules, attempt to build them
+# directly or let dkms handle it later.
 rpm-extended_src_compile() {
-	# Nothing to do here
-	return
+	[[ -d ${S}/usr/src/ ]] || return 0
+	export _RPM_CONTAINS_KMODS=1
+	local dir modlist=()
+	local modargs=( KERNELDIR="${KV_OUT_DIR}" KERNELVER="${KV_FULL}" )
+	for dir in ${S}/usr/src/*; do
+		if use dkms; then
+			dkms_gentoofy_conf "${dir}/dkms.conf"
+		else
+			modlist+=( $(
+				source "${dir}/dkms.conf" &>/dev/null || die
+				for mod in "${BUILT_MODULE_NAME[@]}"; do
+					echo "${mod}=:${dir}"
+				done
+			) )
+		fi
+	done
+	! use dkms && linux-mod-r1_src_compile
 }
 
 # @FUNCTION: rpm-extended_src_install
@@ -85,6 +113,8 @@ rpm-extended_src_install() {
 			mv "${file}" "${ED}/usr/share/doc/${PF}" || die
 		done
 	fi
+
+	[[ -n ${_RPM_CONTAINS_KMODS} ]] && dkms_src_install
 }
 
 # @FUNCTION: rpm-extended_pkg_preinst
@@ -101,21 +131,26 @@ rpm-extended_pkg_preinst() {
 
 # @FUNCTION: rpm-extended_pkg_postinst
 # @DESCRIPTION:
-# Some rpm files contain a postinstall script, we extract this script, write it
-# to a file and execute it in the correct phase
+# Some rpm files contain a postinstall script, we extract this
+# script, write it to a file and execute it in the correct phase.
+# Runs the postinst function from dkms.eclass if kmods detected.
 rpm-extended_pkg_postinst() {
+	[[ -n ${_RPM_CONTAINS_KMODS} ]] && dkms_pkg_postinst
 	for x in ${A}; do
 		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n -E '/^postinstall/,/^preuninstall|^postuninstall|^verify|^preinstall/{//!p;}' > "postinst-${x}.sh"
 		chmod +x "postinst-${x}.sh"
 		${RPM_SCRIPT_RUNNER} "postinst-${x}.sh"
 	done
+	udev_reload
 }
 
 # @FUNCTION: rpm-extended_pkg_prerm
 # @DESCRIPTION:
-# Some rpm files contain a preuninstall script, we extract this script, write it
-# to a file and execute it in the correct phase
+# Some rpm files contain a preuninstall script, we extract this
+# script, write it to a file and execute it in the correct phase.
+# Runs the prerm function from dkms.eclass if kernel modules detected.
 rpm-extended_pkg_prerm() {
+	[[ -n ${_RPM_CONTAINS_KMODS} ]] && dkms_pkg_prerm
 	for x in ${A}; do
 		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n -E '/^preuninstall/,/^postuninstall|^verify|^preinstall|^postinstall/{//!p;}' > "prerm-${x}.sh"
 		chmod +x "prerm-${x}.sh"
@@ -125,16 +160,24 @@ rpm-extended_pkg_prerm() {
 
 # @FUNCTION: rpm-extended_pkg_postrm
 # @DESCRIPTION:
-# Some rpm files contain a postuninstall script, we extract this script, write
-# it to a file and execute it in the correct phase
+# Some rpm files contain a postuninstall script, we extract this
+# script, write it to a file and execute it in the correct phase.
 rpm-extended_pkg_postrm() {
 	for x in ${A}; do
 		rpm -qp --scripts "${DISTDIR}/${x}" | sed -n -E '/^postuninstall/,/^verify|^preinstall|^postinstall|^preuninstall/{//!p;}' > "postrm-${x}.sh"
 		chmod +x "postrm-${x}.sh"
 		${RPM_SCRIPT_RUNNER} "postrm-${x}.sh"
 	done
+	udev_reload
 }
 
-EXPORT_FUNCTIONS src_compile src_install pkg_preinst pkg_postinst pkg_prerm pkg_postrm
+# @FUNCTION: rpm-extended_pkg_config
+# @DESCRIPTION:
+# If rpm contains kernel modules, then run the dkms pkg_config func.
+rpm-extended_pkg_config() {
+	[[ -n ${_RPM_CONTAINS_KMODS} ]] && dkms_pkg_config
+}
+
+EXPORT_FUNCTIONS src_compile src_install pkg_config pkg_preinst pkg_postinst pkg_prerm pkg_postrm
 
 fi
