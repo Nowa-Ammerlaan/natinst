@@ -22,4 +22,4 @@ jobs:
         FEATURES="getbinpkg binpkg-ignore-signature parallel-fetch parallel-install pkgdir-index-trusted" USE="-initramfs" emerge --quiet --noreplace -j$(nproc) -l$(nproc) --autounmask-continue --with-bdeps=n dev-util/pkgcheck
     - name: Run pkgcheck
       run : |
-        pkgcheck --color y ci
+        pkgcheck --color y scan
