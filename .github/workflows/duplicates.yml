@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Setup master gentoo repository
+    - name: Setup master repositories
       run: |
         ./scripts/setup-master-gentoo.sh
     - name: Check for duplicates
