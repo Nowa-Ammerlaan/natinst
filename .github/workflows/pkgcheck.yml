@@ -19,7 +19,7 @@ jobs:
           -c "
           runner() { echo \"::group::${1}\"; shift 1; \"$@\"; local exit=$?; echo; echo \"::endgroup::\"; return $exit; } ;
           runner \"Sync gentoo repo\" pmaint sync gentoo || exit 1 ;
-          runner \"Preping portage config dir\" mkdir -p /etc/portage/repos.conf || exit 1 ;
+          runner \"Preping portage config dir\" mkdir -p /etc/portage || exit 1 ;
           runner \"Enabling guru repo\" echo "[guru]\nlocation = /var/db/repos/guru\nsync-type = git\nsync-uri = https://github.com/gentoo-mirror/guru.git\nsync-depth = 1\n" > /etc/portage/repos.conf ;
           runner \"Sync guru repo\" pmaint sync guru || exit 1 ;
           runner \"Update repo metadata\" pmaint regen --dir ~/.cache/pkgcheck/repos . ;
