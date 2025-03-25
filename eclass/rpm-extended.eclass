@@ -80,7 +80,7 @@ rpm-extended_src_compile() {
 	export _RPM_CONTAINS_KMODS=1
 	local dir modlist=()
 	local modargs=( KERNELDIR="${KV_OUT_DIR}" KERNELVER="${KV_FULL}" )
-	for dir in ${S}/usr/src/*; do
+	for dir in "${S}/usr/src/"*; do
 		if use dkms; then
 			dkms_gentoofy_conf "${dir}/dkms.conf"
 		else
