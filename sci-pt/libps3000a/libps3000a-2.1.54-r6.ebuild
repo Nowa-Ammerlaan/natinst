@@ -12,8 +12,8 @@ HOMEPAGE="https://www.picotech.com"
 SRC_URI="https://labs.picotech.com/rpm/x86_64/libps3000a-2.1.54-6r2438.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

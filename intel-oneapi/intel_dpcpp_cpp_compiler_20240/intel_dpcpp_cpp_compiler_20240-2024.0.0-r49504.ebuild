@@ -12,8 +12,8 @@ HOMEPAGE="https://yum.repos.intel.com/oneapi/"
 SRC_URI="https://yum.repos.intel.com/oneapi/intel-dpcpp-cpp-compiler-2024.0-2024.0.0-49504.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

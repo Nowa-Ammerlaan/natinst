@@ -12,8 +12,8 @@ HOMEPAGE="https://yum.repos.intel.com/oneapi/"
 SRC_URI="https://yum.repos.intel.com/oneapi/intel-oneapi-mkl-sycl-devel-common-2024.2-2024.2.1-103.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

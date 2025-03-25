@@ -12,8 +12,8 @@ HOMEPAGE="https://www.picotech.com"
 SRC_URI="https://labs.picotech.com/rc/picoscope7/rpm/x86_64/picoscope-7.1.16-1r17206.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

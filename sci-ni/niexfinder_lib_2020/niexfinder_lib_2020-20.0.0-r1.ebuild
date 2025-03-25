@@ -12,8 +12,8 @@ HOMEPAGE="http://www.ni.com/linux"
 SRC_URI="niexfinder-lib-2020-20.0.0-1.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

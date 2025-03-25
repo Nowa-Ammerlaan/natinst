@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-daqmx-labview-2020-support-22.8.0.49367-0+f215.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

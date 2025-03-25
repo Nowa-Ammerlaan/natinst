@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q1/rpm/ni/el8/libnismbus2-errors-21.5.0.49262-0+f110.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

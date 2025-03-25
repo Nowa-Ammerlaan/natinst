@@ -12,8 +12,8 @@ HOMEPAGE="http://www.ni.com/linux"
 SRC_URI="ni-service-locator-19.0.0.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

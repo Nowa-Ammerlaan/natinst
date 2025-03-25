@@ -12,8 +12,8 @@ HOMEPAGE="https://yum.repos.intel.com/oneapi/"
 SRC_URI="https://yum.repos.intel.com/oneapi/intel-renderkit-getting-started-2024.0-2024.0.0-49598.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

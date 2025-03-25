@@ -12,8 +12,8 @@ HOMEPAGE="http://www.ni.com/linux/"
 SRC_URI="nilvcli-1.1.0.49154-f2.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

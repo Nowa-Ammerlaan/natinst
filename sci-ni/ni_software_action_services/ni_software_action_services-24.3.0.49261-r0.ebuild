@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/ni-software-action-services-24.3.0.49261-0+f109.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

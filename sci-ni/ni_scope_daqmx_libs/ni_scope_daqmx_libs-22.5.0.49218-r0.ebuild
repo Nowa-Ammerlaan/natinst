@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-scope-daqmx-libs-22.5.0.49218-0+f66.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

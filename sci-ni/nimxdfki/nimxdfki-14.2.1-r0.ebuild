@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="nimxdfki-14.2.1-f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

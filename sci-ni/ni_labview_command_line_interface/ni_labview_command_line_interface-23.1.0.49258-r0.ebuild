@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
 SRC_URI="https://download.ni.com/ni-linux-desktop/LabVIEW/2023/Q1/f0/community/rpm/ni-labview-2023/el9/ni-labview-command-line-interface-23.1.0.49258-0+f106.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

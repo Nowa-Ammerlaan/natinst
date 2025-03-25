@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/linux"
 SRC_URI="labview-2020-rte-20.1.1.49158-0+f6.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

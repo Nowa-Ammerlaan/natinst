@@ -12,8 +12,8 @@ HOMEPAGE="https://yum.repos.intel.com/oneapi/"
 SRC_URI="https://yum.repos.intel.com/oneapi/intel-oneapi-openmp-common-2023.2.0-2023.2.0-49495.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

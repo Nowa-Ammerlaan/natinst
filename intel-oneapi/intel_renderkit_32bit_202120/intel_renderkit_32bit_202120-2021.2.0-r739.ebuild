@@ -12,8 +12,8 @@ HOMEPAGE="https://yum.repos.intel.com/oneapi/"
 SRC_URI="https://yum.repos.intel.com/oneapi/intel-renderkit-32bit-2021.2.0-2021.2.0-739.i686.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

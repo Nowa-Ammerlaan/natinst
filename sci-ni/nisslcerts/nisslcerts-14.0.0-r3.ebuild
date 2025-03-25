@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="nisslcerts-14.0.0-3.0.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

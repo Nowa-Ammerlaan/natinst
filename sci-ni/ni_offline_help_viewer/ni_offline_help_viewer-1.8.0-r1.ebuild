@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/docs/en-US"
 SRC_URI="ni-offline-help-viewer-1.8.0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

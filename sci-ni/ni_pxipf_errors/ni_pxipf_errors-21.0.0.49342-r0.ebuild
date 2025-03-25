@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2021/Q4/rpm/ni/el8/ni-pxipf-errors-21.0.0.49342-0+f190.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

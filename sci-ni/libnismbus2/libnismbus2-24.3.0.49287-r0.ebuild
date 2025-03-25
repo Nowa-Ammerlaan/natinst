@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/r/ni-linux-device-drivers"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/libnismbus2-24.3.0.49287-0+f135.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

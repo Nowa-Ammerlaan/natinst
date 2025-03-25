@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/linux/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q4/rpm/ni/el9/ni-avahi-client-23.8.0.49252-0+f100.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

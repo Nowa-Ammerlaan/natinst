@@ -12,8 +12,8 @@ HOMEPAGE="https://01.org/OPAE"
 SRC_URI="https://yum.repos.intel.com/oneapi/opae.pac_sign-1.0.3-1.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

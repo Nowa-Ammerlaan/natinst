@@ -12,8 +12,8 @@ HOMEPAGE="https://download.ni.com/ni-linux-desktop/2018.07/rpm/ni/el7/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2018.07/rpm/ni/el7/ni-software-2018-18.0.3.49155-0+f3.el7.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

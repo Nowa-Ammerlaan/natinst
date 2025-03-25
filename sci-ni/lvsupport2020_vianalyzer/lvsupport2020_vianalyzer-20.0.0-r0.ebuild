@@ -12,8 +12,8 @@ HOMEPAGE="http://www.ni.com/linux/"
 SRC_URI="lvsupport2020-vianalyzer-20.0.0-f32.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

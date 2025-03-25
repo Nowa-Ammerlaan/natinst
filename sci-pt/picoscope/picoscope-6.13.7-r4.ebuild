@@ -12,8 +12,8 @@ HOMEPAGE="https://www.picotech.com"
 SRC_URI="https://labs.picotech.com/rpm/noarch/picoscope-6.13.7-4r707.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

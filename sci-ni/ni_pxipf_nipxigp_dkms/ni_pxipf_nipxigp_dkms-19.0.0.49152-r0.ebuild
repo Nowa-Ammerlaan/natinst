@@ -12,8 +12,8 @@ HOMEPAGE="https://download.ni.com/ni-linux-desktop/2019.07/rpm/ni/el8/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2019.07/rpm/ni/el8/ni-pxipf-nipxigp-dkms-19.0.0.49152-0+f0.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

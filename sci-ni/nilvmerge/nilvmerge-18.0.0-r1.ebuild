@@ -12,8 +12,8 @@ HOMEPAGE="http://www.ni.com/linux"
 SRC_URI="nilvmerge-18.0.0-1.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

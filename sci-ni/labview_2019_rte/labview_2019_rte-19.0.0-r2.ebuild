@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/linux"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2019.07/rpm/ni/el8/labview-2019-rte-19.0.0-2.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

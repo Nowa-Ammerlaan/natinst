@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/legal/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2023/Q2/rpm/ni/el9/ni-euladepot-23.3.0.49582-0+f430.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

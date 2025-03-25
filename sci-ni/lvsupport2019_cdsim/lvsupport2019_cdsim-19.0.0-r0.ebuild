@@ -12,8 +12,8 @@ HOMEPAGE="http://www.ni.com/linux/"
 SRC_URI="lvsupport2019-cdsim-19.0.0-f3.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 

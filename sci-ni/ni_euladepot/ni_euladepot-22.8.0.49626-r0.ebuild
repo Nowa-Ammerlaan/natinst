@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/legal/"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2022/Q4/rpm/ni/el9/ni-euladepot-22.8.0.49626-0+f474.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

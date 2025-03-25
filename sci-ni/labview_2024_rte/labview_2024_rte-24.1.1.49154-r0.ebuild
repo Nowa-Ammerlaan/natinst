@@ -12,8 +12,8 @@ HOMEPAGE="https://www.ni.com/linux"
 SRC_URI="https://download.ni.com/ni-linux-desktop/2024/Q2/rpm/ni/el9/labview-2024-rte-24.1.1.49154-0+f2.x86_64.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror"
 

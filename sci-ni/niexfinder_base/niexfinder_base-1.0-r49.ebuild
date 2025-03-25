@@ -12,8 +12,8 @@ HOMEPAGE="http://www.ni.com/linux"
 SRC_URI="niexfinder-base-1.0-49.noarch.rpm"
 
 LICENSE="all-rights-reserved"
-KEYWORDS="~amd64"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RESTRICT="bindist mirror fetch"
 
