@@ -16,4 +16,4 @@ jobs:
         ./scripts/setup-master-gentoo.sh
     - name: Check for duplicates
       run: |
-        ./scripts/check-duplicates.sh
+        sudo ./scripts/check-duplicates.sh
