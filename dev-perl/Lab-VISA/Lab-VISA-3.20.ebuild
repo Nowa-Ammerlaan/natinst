@@ -1,19 +1,18 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit perl-module
 
 DESCRIPTION="Perl interface to National Instrument's VISA library"
 HOMEPAGE="https://github.com/lab-measurement/Lab-VISA"
 SRC_URI="https://github.com/lab-measurement/Lab-VISA/archive/lab-visa-${PV}.tar.gz"
+S="${WORKDIR}/${PN}-lab-visa-${PV}"
 
 LICENSE="|| ( Artistic GPL-2 )"
-KEYWORDS="~amd64"
 SLOT="0"
-
-S="${WORKDIR}/${PN}-lab-visa-${PV}"
+KEYWORDS="~amd64"
 
 # Only works if nipalk.ko is loaded
 # which does not load on new kernels
