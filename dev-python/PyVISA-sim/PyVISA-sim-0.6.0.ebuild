@@ -9,7 +9,7 @@ PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Simulated backend for PyVISA implementing TCPIP, GPIB, RS232, and USB resources"
-HOMEPAGE="https://github.com/pyvisa/pyvisa"
+HOMEPAGE="https://github.com/pyvisa/pyvisa-sim"
 
 LICENSE="MIT"
 SLOT="0"
