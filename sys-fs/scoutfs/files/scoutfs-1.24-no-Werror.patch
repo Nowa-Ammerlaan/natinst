@@ -1,0 +1,36 @@
+diff --git a/kmod/Makefile b/kmod/Makefile
+index 63d814d..01fbe8b 100644
+--- a/kmod/Makefile
++++ b/kmod/Makefile
+@@ -24,7 +24,7 @@ RPM_GITHASH ?= $(shell git rev-parse --short HEAD)
+ SCOUTFS_ARGS := SCOUTFS_GIT_DESCRIBE=$(SCOUTFS_GIT_DESCRIBE) \
+ 		RPM_GITHASH=$(RPM_GITHASH) \
+ 		CONFIG_SCOUTFS_FS=m -C $(SK_KSRC) M=$(CURDIR)/src \
+-		EXTRA_CFLAGS="-Werror"
++		EXTRA_CFLAGS=""
+ 
+ # - We use the git describe from tags to set up the RPM versioning
+ RPM_VERSION := $(shell git describe --long --tags | awk -F '-' '{gsub(/^v/,""); print $$1}')
+diff --git a/tests/Makefile b/tests/Makefile
+index 3a2380d..b4ac772 100644
+--- a/tests/Makefile
++++ b/tests/Makefile
+@@ -1,4 +1,4 @@
+-CFLAGS := -Wall -O2 -Werror -D_FILE_OFFSET_BITS=64 -fno-strict-aliasing -I ../kmod/src
++CFLAGS := -Wall -D_FILE_OFFSET_BITS=64 -fno-strict-aliasing -I ../kmod/src
+ SHELL := /usr/bin/bash
+ 
+ # each binary command is built from a single .c file
+diff --git a/utils/Makefile b/utils/Makefile
+index e0f7614..aff1c13 100644
+--- a/utils/Makefile
++++ b/utils/Makefile
+@@ -6,7 +6,7 @@
+ FMTIOC_H := format.h ioctl.h
+ FMTIOC_KMOD := $(addprefix ../kmod/src/,$(FMTIOC_H))
+ 
+-CFLAGS := -Wall -O2 -Werror -D_FILE_OFFSET_BITS=64 -g -msse4.2 \
++CFLAGS := -Wall -D_FILE_OFFSET_BITS=64 -g -msse4.2 \
+ 	-fno-strict-aliasing \
+ 	-DSCOUTFS_FORMAT_HASH=0x$(SCOUTFS_FORMAT_HASH)LLU
+ 
