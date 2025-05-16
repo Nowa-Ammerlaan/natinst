@@ -21,6 +21,14 @@ fi
 LICENSE="GPL-2"
 SLOT="0"
 
+# Requires test block device
+RESTRICT="test"
+
+RDEPEND="
+	dev-libs/openssl:=
+	sys-apps/util-linux
+"
+
 BDEPEND="sys-devel/sparse"
 
 MODULES_KERNEL_MAX=5.15
@@ -41,6 +49,7 @@ src_compile() {
 src_test() {
 	pushd tests >/dev/null || die
 	emake
+	./run-tests.sh || die "Tests failed"
 	popd >/dev/null || die
 }
 
@@ -54,5 +63,6 @@ src_install() {
 	exeinto /usr/libexec/scoutfs-fenced
 	doexe utils/fenced/scoutfs-fenced
 	systemd_dounit utils/fenced/scoutfs-fenced.service
-	systemd_install_dropin scoutfs-fenced.service utils/fenced/scoutfs-fenced.conf.example
+	insinto /etc/scoutfs
+	newins utils/fenced/scoutfs-fenced.conf.example scoutfs-fenced.conf
 }
