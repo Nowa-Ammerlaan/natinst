@@ -1,0 +1,13 @@
+diff --git a/utils/Makefile b/utils/Makefile
+index e0f7614..7b90ed3 100644
+--- a/utils/Makefile
++++ b/utils/Makefile
+@@ -34,7 +34,7 @@ endif
+ 
+ $(BIN): $(OBJ)
+ 	$(QU)  [BIN $@]
+-	$(VE)gcc -o $@ $^ -luuid -lm -lcrypto -lblkid
++	$(VE)gcc $(CFLAGS) -o $@ $^ -luuid -lm -lcrypto -lblkid $(LDFLAGS)
+ 
+ %.o %.d: %.c Makefile sparse.sh
+ 	$(QU)  [CC $<]

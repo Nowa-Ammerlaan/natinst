@@ -20,6 +20,7 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
+IUSE="test doc"
 
 # Requires test block device
 RESTRICT="test"
@@ -29,32 +30,52 @@ RDEPEND="
 	sys-apps/util-linux
 "
 
-BDEPEND="sys-devel/sparse"
+BDEPEND="
+	sys-devel/sparse
+	doc? ( dev-tex/latexmk )
+"
 
 MODULES_KERNEL_MAX=5.15
 
-PATCHES=( "${FILESDIR}/${PN}-1.24-no-Werror.patch" )
+PATCHES=(
+	"${FILESDIR}/${PN}-1.24-no-Werror.patch"
+	"${FILESDIR}/${PN}-1.24-respect-flags.patch"
+)
 
 src_compile() {
 	pushd utils >/dev/null || die
-	default
+	emake
 	popd >/dev/null || die
-	pushd kmod >/dev/null || die
-	local modlist=( scoutfs=::src )
-	local modargs=( SK_KSRC="${KV_OUT_DIR}" )
-	dkms_src_compile
-	popd >/dev/null || die
+
+	if use modules; then
+		pushd kmod >/dev/null || die
+		local modlist=( scoutfs=::src )
+		local modargs=( SK_KSRC="${KV_OUT_DIR}" )
+		dkms_src_compile
+		popd >/dev/null || die
+	fi
+
+	if use test; then
+		pushd tests >/dev/null || die
+		emake
+		popd >/dev/null || die
+	fi
+
+	if use doc; then
+		pushd utils/tex >/dev/null || die
+		emake
+		popd >/dev/null || die
+	fi
 }
 
 src_test() {
 	pushd tests >/dev/null || die
-	emake
 	./run-tests.sh || die "Tests failed"
 	popd >/dev/null || die
 }
 
 src_install() {
-	einstalldocs
+	dodoc *.md
 	dkms_src_install
 	doman utils/man/*
 	dosbin utils/src/scoutfs
@@ -65,4 +86,5 @@ src_install() {
 	systemd_dounit utils/fenced/scoutfs-fenced.service
 	insinto /etc/scoutfs
 	newins utils/fenced/scoutfs-fenced.conf.example scoutfs-fenced.conf
+	use doc && dodoc utils/tex/scoutfs.pdf
 }
